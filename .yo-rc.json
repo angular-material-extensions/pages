@@ -1,0 +1,41 @@
+{
+  "generator-ngx-library": {
+    "version": "5.7.1",
+    "authorName": "anthonynahas",
+    "authorEmail": "anthony.na@hotmail.de",
+    "githubUsername": "anthonynahas",
+    "githubRepoName": "ngx-material-pages",
+    "projectName": "ngx-material-pages",
+    "projectVersion": "0.0.1",
+    "projectDescription": "Open source library for angular apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes)",
+    "projectKeywords": [
+      "ngx",
+      " angular",
+      " library",
+      " material",
+      " material-ui",
+      " material-design",
+      " material-components",
+      "pages",
+      " turorials"
+    ],
+    "ngVersion": "5.0.0",
+    "ngModules": [
+      "core",
+      "common"
+    ],
+    "otherDependencies": [],
+    "dependenciesRange": "^",
+    "ngPrefix": "ngx-material",
+    "testingFramework": "karma",
+    "useGreenkeeper": true,
+    "useCompodoc": true,
+    "enforceNgGitCommitMsg": true,
+    "exclusions": [
+      "demo/src/jestGlobalMocks.ts",
+      "demo/src/setupJest.ts",
+      "config/jestGlobalMocks.ts",
+      "config/setupJest.ts"
+    ]
+  }
+}
