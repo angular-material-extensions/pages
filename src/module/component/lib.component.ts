@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'ngx-material-component',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./lib.component.scss']
 })
 export class LibComponent {
-  description = 'Open source library for angular apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes)';
+  description = 'Open source library for angular apps to illustrate custom material pages ' +
+    'content with steps (ideal for tutorials and explanation purposes)';
 }
