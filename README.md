@@ -30,14 +30,16 @@ View all the directives in action at https://anthonynahas.github.io/ngx-material
 
 ### Peer Dependencies Requirements:
 ### Requirements:
+- [angular animations ](https://www.npmjs.com/package/@angular/animations)
+- [angular cdk ](https://www.npmjs.com/package/@angular/cdk)
 - [angular material ](https://www.npmjs.com/package/@angular/material)
 - [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
-- [angular cdk ](https://www.npmjs.com/package/@angular/cdk)
+- [material icons](https://material.angular.io/guide/getting-started#step-6-optional-add-material-icons)
 - if you need a built in theme --> please let me know
 
 ## Install Peer Dependencies - [help](https://material.angular.io/guide/getting-started#step-1-install-angular-material-and-angular-cdk)
 ```bash
-npm i -s @angular/material @angular/cdk
+npm i -s @angular/animations @angular/material @angular/cdk
 ```
 
 ## Installation
@@ -65,12 +67,17 @@ import { NgxMaterialPagesModule } from 'ngx-material-pages';
 ```
 The only remaining part is to list the imported module in your application module. The exact method will be slightly
 different for the root (top-level) module for which you should end up with the code similar to (notice ` NgxMaterialPagesModule .forRoot()`):
+
+NB: please do not forget to import the angular animations module in your root component too! (usally app.component.ts)
 ```js
 import { NgxMaterialPagesModule } from 'ngx-material-pages';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, ...],
-  imports: [NgxMaterialPagesModule.forRoot(), ...],  
+  imports: [NgxMaterialPagesModule.forRoot(),
+  BrowserAnimationsModule,
+   ...],  
   bootstrap: [AppComponent]
 })
 export class AppModule {
@@ -92,12 +99,22 @@ export class OtherModule {
 
 ## Add a material theme - [help](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
 The easiest way is to add 
+```css
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+```
+to you `styles.css` files
+
+[learn more](https://material.angular.io/guide/theming)
+
+## Add a material icons - [help](https://material.angular.io/guide/getting-started#step-6-optional-add-material-icons)
+The easiest way is to add 
 ```html
-<link href="node_modules/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 to you `index.html` files
 
-[learn more](https://material.angular.io/guide/theming)
+[learn more](https://google.github.io/material-design-icons/)
+
 
 ## Usage - Library's components
 This library consists of 4 essential components.
