@@ -10,13 +10,36 @@
 [![dependency Status](https://david-dm.org/anthonynahas/ngx-material-pages/status.svg)](https://david-dm.org/anthonynahas/ngx-material-pages)
 [![devDependency Status](https://david-dm.org/anthonynahas/ngx-material-pages/dev-status.svg?branch=master)](https://david-dm.org/anthonynahas/ngx-material-pages#info=devDependencies)
 [![Greenkeeper Badge](https://badges.greenkeeper.io/anthonynahas/ngx-material-pages.svg)](https://greenkeeper.io/)
+[![license](https://img.shields.io/github/license/anthonynahas/ngx-material-pages.svg?style=flat-square)](https://github.com/AnthonyNahas/ngx-material-pages/blob/master/LICENSE)
+
+Do you need an illustration for your explanations and tutorials ?
+Are you using [angular](https://angular.io/) to build wonderful pwa ?
+You favorite front-end framework is [angular material](https://material.angular.io/) ?
+
+ngx-material-pages is the right UI component for you!
+You build wonderful and comprehensive tutorials pages by providing an outlook and content for each
+step of your explanation.
+
+Try it out! 
 
 ## Demo
-
 View all the directives in action at https://anthonynahas.github.io/ngx-material-pages
 
 ## Dependencies
 * [Angular](https://angular.io) (*requires* Angular 2 or higher, tested with 2.0.0)
+
+### Peer Dependencies Requirements:
+### Requirements:
+- [angular material ](https://www.npmjs.com/package/@angular/material)
+- [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
+- [angular cdk ](https://www.npmjs.com/package/@angular/cdk)
+- if you need a built in theme --> please let me know
+
+## Install Peer Dependencies
+```bash
+npm i -s @angular/material
+npm i -s @angular/cdk
+```
 
 ## Installation
 Install above dependencies via *npm*. 
@@ -68,7 +91,7 @@ export class OtherModule {
 }
 ```
 
-## Usage
+## Usage - Library's components
 
 
 
