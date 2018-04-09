@@ -23,7 +23,8 @@ step of your explanation.
 
 Try it out! 
 
-[ngx-material-pages](https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/v0.1.0%2Fngx-material-pages.mp4?alt=media&token=637cb6d1-9d45-4a7e-840d-6378598cb1fb)
+[![ngx-material-pages](https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/v0.1.0%2Fngx-material-pages-v1.0.png?alt=media&token=5598f20b-d773-424b-8f84-c8422e62cbc5)](https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/v0.1.0%2Fngx-material-pages.mp4?alt=media&token=637cb6d1-9d45-4a7e-840d-6378598cb1fb)
+
 
 ## Demo
 View all the directives in action at https://anthonynahas.github.io/ngx-material-pages
