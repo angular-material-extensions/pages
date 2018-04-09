@@ -15,8 +15,6 @@ import {StepperSelectionEvent} from '@angular/cdk/stepper';
   selector: 'ngx-material-pages',
   templateUrl: './ngx-material-pages.component.html',
   styleUrls: ['./ngx-material-pages.component.scss'],
-  encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
 

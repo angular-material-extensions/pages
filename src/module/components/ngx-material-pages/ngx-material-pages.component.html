@@ -17,26 +17,16 @@
       <button mat-icon-button>
         <mat-icon>menu</mat-icon>
       </button>
-      ngx-auth-firebaseui - npm install
+      ngx-material-pages
     </mat-toolbar>
     <div class="demo-sidenav-content main-container">
 
-      <mat-tab-group [selectedIndex]="index" style="height: 80vh;">
+      <mat-tab-group [selectedIndex]="index" style="min-height: 15vh;">
         <button mat-fab color="warn" (click)="previous()">
           <mat-icon>location</mat-icon>
         </button>
         <mat-tab *ngFor="let page of pages;let i = index;">
           <ng-container [ngTemplateOutlet]="page.pageContent.content"></ng-container>
-        </mat-tab>
-        <mat-tab style="background: blue; margin: 2rem;">
-          <mat-card style="background: red; margin: 5rem; height: 1300px">
-            <mat-card-title>
-              Title1
-            </mat-card-title>
-            <mat-card-content>
-              <h2>test</h2>
-            </mat-card-content>
-          </mat-card>
         </mat-tab>
       </mat-tab-group>
 
