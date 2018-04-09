@@ -5,7 +5,8 @@
 # ngx-material-pages - Open source library for angular apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes)
 
 [![npm version](https://badge.fury.io/js/ngx-material-pages.svg)](https://badge.fury.io/js/ngx-material-pages),
-[![Build Status](https://travis-ci.org/anthonynahas/ngx-material-pages.svg?branch=master)](https://travis-ci.org/anthonynahas/ngx-material-pages)
+[![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://ngx-material-pages.firebaseapp.com)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/AnthonyNahas/ngx-material-pages/master.svg?label=circleci)](https://circleci.com/gh/AnthonyNahas/ngx-material-pages)
 [![Coverage Status](https://coveralls.io/repos/github/anthonynahas/ngx-material-pages/badge.svg?branch=master)](https://coveralls.io/github/anthonynahas/ngx-material-pages?branch=master)
 [![dependency Status](https://david-dm.org/anthonynahas/ngx-material-pages/status.svg)](https://david-dm.org/anthonynahas/ngx-material-pages)
 [![devDependency Status](https://david-dm.org/anthonynahas/ngx-material-pages/dev-status.svg?branch=master)](https://david-dm.org/anthonynahas/ngx-material-pages#info=devDependencies)
@@ -21,6 +22,8 @@ You build wonderful and comprehensive tutorials pages by providing an outlook an
 step of your explanation.
 
 Try it out! 
+
+[ngx-material-pages](https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/v0.1.0%2Fngx-material-pages.mp4?alt=media&token=637cb6d1-9d45-4a7e-840d-6378598cb1fb)
 
 ## Demo
 View all the directives in action at https://anthonynahas.github.io/ngx-material-pages
