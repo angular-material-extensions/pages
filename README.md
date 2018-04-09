@@ -131,7 +131,9 @@ This library consists of 4 essential components.
   </ngx-material-pages>
 ```
 
+## Support
+Drop an email to: [Anthony Nahas](mailto:anthony.na@hotmail.de) and I will help you!
+
 ## License
 
-Copyright (c) 2018 anthonynahas. Licensed under the MIT License (MIT)
-
+Copyright (c) 2018 [Anthony Nahas](mailto:anthony.na@hotmail.de). Licensed under the MIT License (MIT)
