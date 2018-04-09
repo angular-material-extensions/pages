@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {By} from '@angular/platform-browser';
+import {DebugElement} from '@angular/core';
 
-import { LibComponent } from './lib.component';
+import {LibComponent} from './lib.component';
 
 describe('LibComponent', function () {
   let de: DebugElement;
@@ -13,7 +13,7 @@ describe('LibComponent', function () {
     TestBed.configureTestingModule({
       declarations: [LibComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
