@@ -5,7 +5,7 @@
     <mat-toolbar color="primary">
     </mat-toolbar>
 
-    <mat-vertical-stepper>
+    <mat-vertical-stepper [selectedIndex]="index" (selectionChange)="onStepSelectionChange($event)">
       <mat-step *ngFor="let page of pages;let i = index;">
         <ng-container [ngTemplateOutlet]="page.pageOutlook.content"></ng-container>
       </mat-step>
