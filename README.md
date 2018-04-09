@@ -39,30 +39,30 @@ map: {
 
 Once installed you need to import the main module:
 ```js
-import { LibModule } from 'ngx-material-pages';
+import { NgxMaterialPagesModule } from 'ngx-material-pages';
 ```
 The only remaining part is to list the imported module in your application module. The exact method will be slightly
-different for the root (top-level) module for which you should end up with the code similar to (notice ` LibModule .forRoot()`):
+different for the root (top-level) module for which you should end up with the code similar to (notice ` NgxMaterialPagesModule .forRoot()`):
 ```js
-import { LibModule } from 'ngx-material-pages';
+import { NgxMaterialPagesModule } from 'ngx-material-pages';
 
 @NgModule({
   declarations: [AppComponent, ...],
-  imports: [LibModule.forRoot(), ...],  
+  imports: [NgxMaterialPagesModule.forRoot(), ...],  
   bootstrap: [AppComponent]
 })
 export class AppModule {
 }
 ```
 
-Other modules in your application can simply import ` LibModule `:
+Other modules in your application can simply import ` NgxMaterialPagesModule `:
 
 ```js
-import { LibModule } from 'ngx-material-pages';
+import { NgxMaterialPagesModule } from 'ngx-material-pages';
 
 @NgModule({
   declarations: [OtherComponent, ...],
-  imports: [LibModule, ...], 
+  imports: [NgxMaterialPagesModule, ...], 
 })
 export class OtherModule {
 }
