@@ -26,7 +26,7 @@ Try it out!
 View all the directives in action at https://anthonynahas.github.io/ngx-material-pages
 
 ## Dependencies
-* [Angular](https://angular.io) (*requires* Angular 2 or higher, tested with 2.0.0)
+* [Angular](https://angular.io) (*requires* Angular 2 or higher)
 
 ### Peer Dependencies Requirements:
 ### Requirements:
@@ -35,10 +35,9 @@ View all the directives in action at https://anthonynahas.github.io/ngx-material
 - [angular cdk ](https://www.npmjs.com/package/@angular/cdk)
 - if you need a built in theme --> please let me know
 
-## Install Peer Dependencies
+## Install Peer Dependencies - [help](https://material.angular.io/guide/getting-started#step-1-install-angular-material-and-angular-cdk)
 ```bash
-npm i -s @angular/material
-npm i -s @angular/cdk
+npm i -s @angular/material @angular/cdk
 ```
 
 ## Installation
@@ -91,9 +90,46 @@ export class OtherModule {
 }
 ```
 
+## Add a material theme - [help](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
+The easiest way is to add 
+```html
+<link href="node_modules/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+```
+to you `index.html` files
+
+[learn more](https://material.angular.io/guide/theming)
+
 ## Usage - Library's components
+This library consists of 4 essential components.
 
+1. `ngx-material-pages` the main container that hold the pages incl. the outlook view and the content
+2. `ngx-material-page-loader` the container of each page. This component should have two nested elements
+ which are the outlook and the content components (see below)
+3. `ngx-material-page-outlook` the outlook view of a page. This can contain a custom component, custom layout or just a title.
+4. `ngx-material-page-content` this is the content view of the page. This can be anything!!
 
+5. Example:
+
+```html
+<ngx-material-pages>
+    <ngx-material-page-loader>
+      <ngx-material-page-outlook>
+        <!-- put your own outlook view for the first page -->
+      </ngx-material-page-outlook>
+      <ngx-material-page-content>
+        <!-- put your own content view for the first page -->
+      </ngx-material-page-content>
+    </ngx-material-page-loader>
+    <ngx-material-page-loader>
+      <ngx-material-page-outlook>
+        <!-- put your own outlook view for the second page -->
+      </ngx-material-page-outlook>
+      <ngx-material-page-content>
+        <!-- put your own content view for the second page -->
+      </ngx-material-page-content>
+    </ngx-material-page-loader>
+  </ngx-material-pages>
+```
 
 ## License
 
