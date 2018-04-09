@@ -57,6 +57,7 @@
     "@types/node": "9.6.2",
     "angular-cli-ghpages": "0.5.1",
     "angular2-template-loader": "0.6.2",
+    "awesome-typescript-loader": "^5.0.0",
     "codelyzer": "^4.2.1",
     "commitplease": "3.1.0",
     "conventional-github-releaser": "1.1.13",
