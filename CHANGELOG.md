@@ -1,3 +1,14 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/anthonynahas/ngx-material-pages/compare/v1.0.1...v1.1.0) (2018-04-10)
+
+
+### Features
+
+* **lib:** added mode to sidenav and template navigation buttons + added pageChanged and done events ([a750582](https://github.com/anthonynahas/ngx-material-pages/commit/a750582))
+* **ngx-material-pages:** added optional title input to the outlook component ([5237ea8](https://github.com/anthonynahas/ngx-material-pages/commit/5237ea8))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/anthonynahas/ngx-material-pages/compare/v1.0.0...v1.0.1) (2018-04-09)
 
