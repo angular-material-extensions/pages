@@ -1,4 +1,14 @@
-import {ChangeDetectionStrategy, Component, Directive, forwardRef, OnInit, TemplateRef, ViewChild, ViewEncapsulation} from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Directive,
+  forwardRef,
+  Input,
+  OnInit,
+  TemplateRef,
+  ViewChild,
+  ViewEncapsulation
+} from '@angular/core';
 
 
 @Component({
@@ -13,6 +23,9 @@ export class NgxMaterialPageOutlookComponent implements OnInit {
 
   /** Template for page outlook content. */
   @ViewChild(TemplateRef) content: TemplateRef<any>;
+
+  @Input()
+  title: string;
 
   constructor() {
   }
