@@ -5,13 +5,16 @@
 # ngx-material-pages - Open source library for angular apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes)
 
 [![npm version](https://badge.fury.io/js/ngx-material-pages.svg)](https://badge.fury.io/js/ngx-material-pages),
-[![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://ngx-material-pages.firebaseapp.com)
+[![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/ngx-material-pages)
 [![CircleCI branch](https://img.shields.io/circleci/project/github/AnthonyNahas/ngx-material-pages/master.svg?label=circleci)](https://circleci.com/gh/AnthonyNahas/ngx-material-pages)
 [![Coverage Status](https://coveralls.io/repos/github/anthonynahas/ngx-material-pages/badge.svg?branch=master)](https://coveralls.io/github/anthonynahas/ngx-material-pages?branch=master)
 [![dependency Status](https://david-dm.org/anthonynahas/ngx-material-pages/status.svg)](https://david-dm.org/anthonynahas/ngx-material-pages)
 [![devDependency Status](https://david-dm.org/anthonynahas/ngx-material-pages/dev-status.svg?branch=master)](https://david-dm.org/anthonynahas/ngx-material-pages#info=devDependencies)
 [![Greenkeeper Badge](https://badges.greenkeeper.io/anthonynahas/ngx-material-pages.svg)](https://greenkeeper.io/)
 [![license](https://img.shields.io/github/license/anthonynahas/ngx-material-pages.svg?style=flat-square)](https://github.com/AnthonyNahas/ngx-material-pages/blob/master/LICENSE)
+
+
+![ngx-material-pages](https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fdemo_iphone_320_low.gif?alt=media&token=04283ec5-1f39-4a5e-b853-b79347ed28c6)
 
 Do you need an illustration for your explanations and tutorials ?
 Are you using [angular](https://angular.io/) to build wonderful pwa ?
