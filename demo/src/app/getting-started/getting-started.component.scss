@@ -1,6 +1,25 @@
-.getting-started{
-    margin-top: 1.0rem;
+.getting-started {
+  margin-top: 1.0rem;
 }
+
 ::ng-deep .mat-tab-label-container {
   display: none !important;
+}
+
+ngx-material-pages {
+  button:focus {
+    outline: none;
+  }
+
+  video {
+    max-width: 100%;
+  }
+
+  .comment-container {
+    margin: 1rem;
+  }
+}
+
+.mat-button {
+  white-space: normal !important;
 }
