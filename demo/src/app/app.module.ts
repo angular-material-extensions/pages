@@ -8,6 +8,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppSharedModule} from './shared';
 import {HomeModule} from './home/home.module';
 import {AppComponent} from './app.component';
+import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {AppComponent} from './app.component';
     // The application ID can be any identifier which is unique on
     // the page.
     BrowserModule.withServerTransition({appId: 'ngx-material-pages-demo-id'}),
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
