@@ -3,7 +3,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   ContentChildren, EventEmitter,
-  forwardRef, HostListener,
+  forwardRef, HostListener, Input,
   OnInit, Output,
   QueryList, ViewChild,
   ViewEncapsulation
@@ -24,6 +24,9 @@ export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
 
   @ContentChildren(NgxMaterialPageLoaderComponent)
   pages: QueryList<NgxMaterialPageLoaderComponent>;
+
+  @Input()
+  title: string;
 
   @Output()
   done: EventEmitter<void> = new EventEmitter<void>();
