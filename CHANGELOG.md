@@ -1,3 +1,13 @@
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/anthonynahas/ngx-material-pages/compare/v1.1.2...v1.1.3) (2018-04-12)
+
+
+### Features
+
+* **ngx-material-pages:** input for the title of the toolbar ([da60598](https://github.com/anthonynahas/ngx-material-pages/commit/da60598))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/anthonynahas/ngx-material-pages/compare/v1.1.1...v1.1.2) (2018-04-11)
 
