@@ -147,21 +147,10 @@ export class GettingStartedComponent implements OnInit {
     this.titleService.setTitle('Getting Started | ngx-material-pages');
   }
 
-  onHighlight(e) {
-    this.response = {
-      language: e.language,
-      r: e.r,
-      second_best: '{...}',
-      top: '{...}',
-      value: '{...}'
-    };
-  }
-
   showCopyMessage(content: string) {
     this.snackBar.open(`${content} copied`, 'OK', {
       duration: 3000
     });
-
   }
 
 }
