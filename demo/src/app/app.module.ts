@@ -9,6 +9,7 @@ import {AppSharedModule} from './shared';
 import {HomeModule} from './home/home.module';
 import {AppComponent} from './app.component';
 import {environment} from '../environments/environment';
+import {ServiceWorkerModule} from '@angular/service-worker';
 
 @NgModule({
   declarations: [
