@@ -35,6 +35,7 @@
     "font-awesome": "^4.7.0",
     "include-media": "^1.4.9",
     "material-design-icons": "^3.0.1",
+    "ngx-auth-firebaseui": "^0.5.5",
     "ngx-clipboard": "^10.0.0",
     "ngx-disqus": "^2.3.7",
     "ngx-highlightjs": "^1.4.1",

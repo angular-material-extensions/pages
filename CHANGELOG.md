@@ -1,3 +1,15 @@
+<a name="1.1.6"></a>
+## [1.1.6](https://github.com/anthonynahas/ngx-material-pages/compare/v1.1.5...v1.1.6) (2018-04-15)
+
+
+### Bug Fixes
+
+* **ngx-material-pages:** added the peerDependencies ([3d225b3](https://github.com/anthonynahas/ngx-material-pages/commit/3d225b3))
+* **ngx-material-pages:** ng-deep will not affect external tabs ([48fad96](https://github.com/anthonynahas/ngx-material-pages/commit/48fad96))
+* **ngx-material-pages:** removed duplicated dependencies under dev ([2cd576e](https://github.com/anthonynahas/ngx-material-pages/commit/2cd576e))
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/anthonynahas/ngx-material-pages/compare/v1.1.4...v1.1.5) (2018-04-12)
 
