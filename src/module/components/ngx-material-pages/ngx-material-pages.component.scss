@@ -1,5 +1,7 @@
-::ng-deep .mat-tab-label-container {
-  display: none !important;
+.hide-deep {
+  ::ng-deep .mat-tab-label-container {
+    display: none !important;
+  }
 }
 
 .navigation-buttons {
