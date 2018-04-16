@@ -1,3 +1,13 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/anthonynahas/ngx-material-pages/compare/v1.1.6...v1.2.0) (2018-04-16)
+
+
+### Bug Fixes
+
+* **ngx-material-pages:** replaced ng-deep with internal manipulation with renderer2 ([51c75dc](https://github.com/anthonynahas/ngx-material-pages/commit/51c75dc))
+
+
+
 <a name="1.1.6"></a>
 ## [1.1.6](https://github.com/anthonynahas/ngx-material-pages/compare/v1.1.5...v1.1.6) (2018-04-15)
 

@@ -535,10 +535,77 @@
           </mat-card>
         </ngx-material-page-content>
       </ngx-material-page-loader>
+
+      <!--8-->
       <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Run demo locally"></ngx-material-page-outlook>
+        <ngx-material-page-outlook title="Run demo locally">
+          <img style="width: 50px; height: 50px" src="../../assets/icons/github.svg">
+        </ngx-material-page-outlook>
         <ngx-material-page-content>
-          <mat-card-title>Interested </mat-card-title>
+          <mat-card-title-group><a href="https://github.com/AnthonyNahas/ngx-material-pages"
+                                   mat-button
+                                   color="primary">Clone the repo</a></mat-card-title-group>
+          <mat-card-title>Interested? Try it out on your machine
+          </mat-card-title>
+          <div class="comment-container">
+            <p>Clone this repo by running this following command</p>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="space-between">
+                 <pre><code highlight
+                            [code]="'git clone https://github.com/AnthonyNahas/ngx-material-pages.git'"></code></pre>
+            <button mat-icon-button
+                    ngxClipboard
+                    [cbContent]="'git clone https://github.com/AnthonyNahas/ngx-material-pages.git'"
+                    matTooltip="copy"
+                    (click)="showCopyMessage('git clone https://github.com/AnthonyNahas/ngx-material-pages.git')">
+              <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
+            </button>
+          </div>
+          <div class="comment-container">
+            <p>navigate to the demo directory</p>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="space-between">
+                 <pre><code highlight
+                            [code]="'$ cd demo'"></code></pre>
+            <button mat-icon-button
+                    ngxClipboard
+                    [cbContent]="'cd demo'"
+                    matTooltip="copy"
+                    (click)="showCopyMessage('cd demo')">
+              <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
+            </button>
+          </div>
+          <div class="comment-container">
+            <p>install the dependencies</p>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="space-between">
+                 <pre><code highlight
+                            [code]="'$ npm i'"></code></pre>
+            <button mat-icon-button
+                    ngxClipboard
+                    [cbContent]="'npm i'"
+                    matTooltip="copy"
+                    (click)="showCopyMessage('npm i')">
+              <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
+            </button>
+          </div>
+          <div class="comment-container">
+            <p>start the app</p>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="space-between">
+                 <pre><code highlight
+                            [code]="'$ ng serve --open'"></code></pre>
+            <button mat-icon-button
+                    ngxClipboard
+                    [cbContent]="'ng serve --open'"
+                    matTooltip="copy"
+                    (click)="showCopyMessage('ng serve --open')">
+              <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
+            </button>
+          </div>
+          <div class="comment-container">
+            <p>the app is now hosted on http://localhost:4200/</p>
+          </div>
         </ngx-material-page-content>
       </ngx-material-page-loader>
     </ngx-material-pages>

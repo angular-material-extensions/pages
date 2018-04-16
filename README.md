@@ -155,6 +155,10 @@ This library consists of 4 essential components.
   </ngx-material-pages>
 ```
 
+## Other Angular Libraries
+- [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
+- [ngx-material-password-strength](https://github.com/AnthonyNahas/ngx-material-password-strength)
+
 ## Support
 Drop an email to: [Anthony Nahas](mailto:anthony.na@hotmail.de) and I will help you!
 
