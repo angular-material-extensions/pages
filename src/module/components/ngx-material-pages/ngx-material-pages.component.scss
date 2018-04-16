@@ -1,9 +1,3 @@
-.hide-deep {
-  ::ng-deep .mat-tab-label-container {
-    display: none !important;
-  }
-}
-
 .navigation-buttons {
   margin: 1rem;
   place-content: stretch space-between;

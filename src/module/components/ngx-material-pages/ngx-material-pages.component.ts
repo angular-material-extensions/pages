@@ -1,16 +1,13 @@
 import {
   AfterContentInit,
-  ChangeDetectionStrategy,
   Component,
-  ContentChildren, EventEmitter,
-  forwardRef, HostListener, Input,
+  ContentChildren, ElementRef, EventEmitter, HostListener, Input,
   OnInit, Output,
-  QueryList, ViewChild,
-  ViewEncapsulation
+  QueryList, Renderer2, ViewChild
 } from '@angular/core';
 import {NgxMaterialPageLoaderComponent} from './ngx-material-page-loader/ngx-material-page-loader.component';
 import {StepperSelectionEvent} from '@angular/cdk/stepper';
-import {MatSidenav} from '@angular/material';
+import {MatSidenav, MatTabGroup} from '@angular/material';
 
 @Component({
   selector: 'ngx-material-pages',
@@ -21,6 +18,9 @@ export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
 
   @ViewChild('sidenav')
   sidenav: MatSidenav;
+
+  @ViewChild(MatTabGroup, {read: ElementRef})
+  tabHeader: ElementRef;
 
   @ContentChildren(NgxMaterialPageLoaderComponent)
   pages: QueryList<NgxMaterialPageLoaderComponent>;
@@ -43,7 +43,7 @@ export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
   // the total number of pages to render
   totalPages: number;
 
-  constructor() {
+  constructor(private renderer: Renderer2) {
     this.index = 0;
   }
 
@@ -59,6 +59,7 @@ export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
 
   ngAfterContentInit() {
     this.totalPages = this.pages.length;
+    this.renderer.setStyle(this.tabHeader.nativeElement.children[0], 'display', 'none');
   }
 
   @HostListener('window:resize', ['$event'])
