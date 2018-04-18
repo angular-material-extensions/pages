@@ -14,10 +14,6 @@ export class GettingStartedComponent implements OnInit {
 
   response: HighlightResult;
 
-  code = `function myFunction() {
-  document.getElementById("demo1").innerHTML = "Hello there!";
-  document.getElementById("demo2").innerHTML = "How are you?";
-  }`;
 
   ngVersion = `    _                      _                 ____ _     ___
                  / \\   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
@@ -83,6 +79,8 @@ export class GettingStartedComponent implements OnInit {
       ],`;
 
   materialIconsLink = `<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">`;
+
+  // 6
 
   systemJSModuleImport = `map: {
   'ngx-material-pages': 'node_modules/ngx-material-pages/bundles/ngx-material-pages.umd.js',

@@ -2,10 +2,6 @@
   margin-top: 1.0rem;
 }
 
-::ng-deep .mat-tab-label-container {
-  display: none !important;
-}
-
 ngx-material-pages {
   button:focus {
     outline: none;
