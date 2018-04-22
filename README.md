@@ -13,8 +13,11 @@
 [![Greenkeeper Badge](https://badges.greenkeeper.io/anthonynahas/ngx-material-pages.svg)](https://greenkeeper.io/)
 [![license](https://img.shields.io/github/license/anthonynahas/ngx-material-pages.svg?style=flat-square)](https://github.com/AnthonyNahas/ngx-material-pages/blob/master/LICENSE)
 
+<p align="center">
+  <img alt="ngx-material-pages" style="text-align: center;"
+   src="assets/demo.gif">
+</p>
 
-![ngx-material-pages](https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fdemo_iphone_320_low.gif?alt=media&token=04283ec5-1f39-4a5e-b853-b79347ed28c6)
 
 Do you need an illustration for your explanations and tutorials ?
 Are you using [angular](https://angular.io/) to build wonderful pwa ?
@@ -25,9 +28,6 @@ You build wonderful and comprehensive tutorials pages by providing an outlook an
 step of your explanation.
 
 Try it out! 
-
-[![ngx-material-pages](https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/v0.1.0%2Fngx-material-pages-v1.0.png?alt=media&token=5598f20b-d773-424b-8f84-c8422e62cbc5)](https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/v0.1.0%2Fngx-material-pages.mp4?alt=media&token=637cb6d1-9d45-4a7e-840d-6378598cb1fb)
-
 
 ## Demo
 View all the directives in action at https://anthonynahas.github.io/ngx-material-pages
