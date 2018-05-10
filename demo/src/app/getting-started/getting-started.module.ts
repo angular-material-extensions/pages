@@ -8,6 +8,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {ClipboardModule} from 'ngx-clipboard';
 import {NgxMaterialPagesModule} from 'ngx-material-pages';
 import {DisqusModule} from 'ngx-disqus';
+import {OverlayModule} from '@angular/cdk/overlay';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import {DisqusModule} from 'ngx-disqus';
     MatButtonModule,
     MatIconModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    OverlayModule,
   ],
   declarations: [GettingStartedComponent],
 })
