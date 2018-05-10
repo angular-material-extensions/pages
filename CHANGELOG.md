@@ -1,3 +1,13 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/anthonynahas/ngx-material-pages/compare/v1.2.1...v1.3.0) (2018-05-10)
+
+
+### Bug Fixes
+
+* **package:** update [@angular](https://github.com/angular)/cdk to version 6.0.1 ([e77a9f7](https://github.com/anthonynahas/ngx-material-pages/commit/e77a9f7))
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/anthonynahas/ngx-material-pages/compare/v1.2.0...v1.2.1) (2018-04-22)
 
