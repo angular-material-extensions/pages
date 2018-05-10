@@ -4,6 +4,8 @@
 
 # ngx-material-pages - Open source library for angular apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes)
 
+## Angular V6 is supported!
+
 [![npm version](https://badge.fury.io/js/ngx-material-pages.svg)](https://badge.fury.io/js/ngx-material-pages),
 [![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/ngx-material-pages)
 [![CircleCI branch](https://img.shields.io/circleci/project/github/AnthonyNahas/ngx-material-pages/master.svg?label=circleci)](https://circleci.com/gh/AnthonyNahas/ngx-material-pages)
@@ -19,7 +21,7 @@
 </p>
 
 
-Do you need an illustration for your explanations and tutorials ?
+Do you need an illustration for your explanations and tutorials ? Or maybe an alternative way of pagination ?
 Are you using [angular](https://angular.io/) to build wonderful pwa ?
 You favorite front-end framework is [angular material](https://material.angular.io/) ?
 
@@ -154,6 +156,14 @@ This library consists of 4 essential components.
     </ngx-material-page-loader>
   </ngx-material-pages>
 ```
+
+## Where are ngx-material-pages being used ? Here are some examples
+- [ngx-auth-firebaseui](https://ngx-auth-firebaseui.firebaseapp.com/getting-started)
+- [ngx-material-pages](https://anthonynahas.github.io/ngx-material-pages/getting-started)
+- [ngx-material-password-strength](https://anthonynahas.github.io/ngx-material-password-strength/getting-started)
+- [ngx-material-contacts](https://anthonynahas.github.io/ngx-material-contacts/getting-started)
+- [ngx-material-faq](https://anthonynahas.github.io/ngx-material-faq/getting-started)
+- [combination-generator](https://anthonynahas.github.io/combination-generator/getting-started)
 
 ## Other Angular Libraries
 - [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)

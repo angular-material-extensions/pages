@@ -21,7 +21,8 @@
     " material-design",
     " material-components",
     "pages",
-    " turorials"
+    "pagination",
+    "turorials"
   ],
   "bugs": {
     "url": "https://github.com/anthonynahas/ngx-material-pages/issues"
