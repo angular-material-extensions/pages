@@ -35,6 +35,7 @@ View all the directives in action at https://anthonynahas.github.io/ngx-material
 
 ## Dependencies
 * [Angular](https://angular.io) (*requires* Angular 2 or higher)
+- if you are still using angular v5, please the following version `1.2.1`
 
 ### Peer Dependencies Requirements:
 ### Requirements:
