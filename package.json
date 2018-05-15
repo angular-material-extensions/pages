@@ -38,20 +38,21 @@
     "check-travis": " travis-status --repo=anthonynahas/ngx-material-pages --branch=master --fail-pending || echo 'Not yet passing'"
   },
   "dependencies": {
-    "@angular/animations": "^6.0.0",
-    "@angular/cdk": "^6.0.1",
-    "@angular/common": "^6.0.0",
-    "@angular/core": "^6.0.0",
-    "@angular/material": "^6.0.1"
+    "@angular/animations": "^6.0.1",
+    "@angular/cdk": "^6.0.2",
+    "@angular/common": "^6.0.1",
+    "@angular/core": "^6.0.1",
+    "@angular/material": "^6.0.2"
   },
   "devDependencies": {
-    "@angular/compiler": "^6.0.0",
-    "@angular/compiler-cli": "^6.0.0",
-    "@angular/flex-layout": "^5.0.0-beta.14",
-    "@angular/forms": "^6.0.0",
-    "@angular/platform-browser": "^6.0.0",
-    "@angular/platform-browser-dynamic": "^6.0.0",
-    "@angular/platform-server": "^6.0.0",
+    "@angular/compiler": "^6.0.1",
+    "@angular/compiler-cli": "^6.0.1",
+    "@angular/language-service": "^6.0.1",
+    "@angular/flex-layout": "^6.0.0-beta.15",
+    "@angular/forms": "^6.0.1",
+    "@angular/platform-browser": "^6.0.1",
+    "@angular/platform-browser-dynamic": "^6.0.1",
+    "@angular/platform-server": "^6.0.1",
     "@compodoc/gulp-compodoc": "0.0.9",
     "@types/jasmine": "2.5.41",
     "@types/lodash": "4.14.108",
@@ -101,7 +102,7 @@
     "rollup-plugin-sourcemaps": "0.4.2",
     "rollup-plugin-uglify": "3.0.0",
     "run-sequence": "2.2.1",
-    "rxjs": "5.5.2",
+    "rxjs": "6.1.0",
     "sass-loader": "7.0.1",
     "source-map-loader": "0.2.3",
     "to-string-loader": "1.1.5",
@@ -119,7 +120,7 @@
     "@angular/material": "5.x"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.x"
   },
   "greenkeeper": {
     "ignore": [
