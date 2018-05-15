@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Title} from '@angular/platform-browser';
+import {MatSnackBar} from '@angular/material';
 
 @Component({
   selector: 'app-home',
@@ -9,11 +10,22 @@ import {Title} from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private titleService: Title) {
+  constructor(private titleService: Title,
+              public snackBar: MatSnackBar) {
   }
 
   ngOnInit() {
     this.titleService.setTitle('Home | ngx-material-pages');
+  }
+
+  pnPageChanges($event) {
+    console.log('page changed - current index: ', $event);
+  }
+
+  onLastPageReached() {
+    this.snackBar.open('Awesome! You\'re done!', 'OK', {
+      duration: 3000
+    });
   }
 
 }

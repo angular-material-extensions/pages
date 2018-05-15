@@ -29,7 +29,9 @@
 <section class="home">
   <div class="container">
     <!-- put your content here-->
-    <ngx-material-pages title="ngx-material-pages">
+    <ngx-material-pages title="ngx-material-pages"
+                        (pageChanged)="pnPageChanges($event)"
+                        (done)="onLastPageReached()">
       <ngx-material-page-loader>
         <ngx-material-page-outlook title="Outlook Title 1">
           Outlook Content 1

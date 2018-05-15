@@ -5,7 +5,7 @@ import {NgxMaterialPagesModule} from 'ngx-material-pages';
 import {HomeRoutingModule} from './home-routing.module';
 import {HomeComponent} from './home.component';
 import {DisqusModule} from 'ngx-disqus';
-import {MatCardModule, MatTabsModule} from '@angular/material';
+import {MatCardModule, MatSnackBar, MatSnackBarModule, MatTabsModule} from '@angular/material';
 
 @NgModule({
   imports: [
@@ -14,9 +14,14 @@ import {MatCardModule, MatTabsModule} from '@angular/material';
     DisqusModule.forRoot('ngx-material-pages'),
     HomeRoutingModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSnackBarModule
   ],
   declarations: [HomeComponent],
 })
 export class HomeModule {
+
+
+  constructor() {
+  }
 }
