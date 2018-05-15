@@ -151,6 +151,10 @@ export class GettingStartedComponent implements OnInit {
     });
   }
 
+  onPageChanges($event) {
+    console.log('page changed - current index: ', $event);
+  }
+
   onLastPageReached() {
     this.snackBar.open('Awesome! You\'re done!', 'OK', {
       duration: 3000
