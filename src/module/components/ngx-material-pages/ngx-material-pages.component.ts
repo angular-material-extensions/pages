@@ -88,6 +88,10 @@ export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
   next() {
     this.index = this.index === this.totalPages - 1 ? this.totalPages - 1 : ++this.index;
     this.pageChanged.emit(this.index);
+
+    if (this.index === this.totalPages - 1) {
+      this.done.emit();
+    }
   }
 
 
@@ -97,6 +101,7 @@ export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
    *
    */
   onStepSelectionChange(event: StepperSelectionEvent) {
+    console.log('onStepSelectionChanged');
     this.index = event.selectedIndex;
     this.pageChanged.emit(this.index);
   }

@@ -21,12 +21,14 @@
     </mat-toolbar>
     <div class="demo-sidenav-content main-container">
 
-      <mat-tab-group [selectedIndex]="index" style="min-height: 15vh;" class="hide-deep">
+      <mat-tab-group [selectedIndex]="index" style="min-height: 15vh;" >
         <button mat-fab color="warn" (click)="previous()">
           <mat-icon>location</mat-icon>
         </button>
-        <mat-tab *ngFor="let page of pages;let i = index;" class="test124">
-          <ng-container [ngTemplateOutlet]="page.pageContent.content"></ng-container>
+        <mat-tab *ngFor="let page of pages;let i = index;">
+          <ng-template matTabContent>
+            <ng-container [ngTemplateOutlet]="page.pageContent.content"></ng-container>
+          </ng-template>
         </mat-tab>
       </mat-tab-group>
 
