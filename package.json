@@ -38,21 +38,21 @@
     "check-travis": " travis-status --repo=anthonynahas/ngx-material-pages --branch=master --fail-pending || echo 'Not yet passing'"
   },
   "dependencies": {
-    "@angular/animations": "^6.0.1",
-    "@angular/cdk": "^6.0.2",
-    "@angular/common": "^6.0.1",
-    "@angular/core": "^6.0.1",
-    "@angular/material": "^6.0.2"
+    "@angular/animations": "^6.0.2",
+    "@angular/cdk": "^6.1.0",
+    "@angular/common": "^6.0.2",
+    "@angular/core": "^6.0.2",
+    "@angular/material": "^6.1.0"
   },
   "devDependencies": {
-    "@angular/compiler": "^6.0.1",
-    "@angular/compiler-cli": "^6.0.1",
-    "@angular/language-service": "^6.0.1",
+    "@angular/compiler": "^6.0.2",
+    "@angular/compiler-cli": "^6.0.2",
+    "@angular/language-service": "^6.0.2",
     "@angular/flex-layout": "^6.0.0-beta.15",
-    "@angular/forms": "^6.0.1",
-    "@angular/platform-browser": "^6.0.1",
-    "@angular/platform-browser-dynamic": "^6.0.1",
-    "@angular/platform-server": "^6.0.1",
+    "@angular/forms": "^6.0.2",
+    "@angular/platform-browser": "^6.0.2",
+    "@angular/platform-browser-dynamic": "^6.0.2",
+    "@angular/platform-server": "^6.0.2",
     "@compodoc/gulp-compodoc": "0.0.9",
     "@types/jasmine": "2.5.41",
     "@types/lodash": "4.14.109",
