@@ -7,12 +7,15 @@
 
 [![npm version](https://badge.fury.io/js/ngx-material-pages.svg)](https://badge.fury.io/js/ngx-material-pages),
 [![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/ngx-material-pages)
+[![Join the chat at https://gitter.im/angular-material-extensions/Lobby](https://badges.gitter.im/angular-material-extensions/Lobby.svg)](https://gitter.im/angular-material-extensions/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![CircleCI branch](https://img.shields.io/circleci/project/github/AnthonyNahas/ngx-material-pages/master.svg?label=circleci)](https://circleci.com/gh/AnthonyNahas/ngx-material-pages)
 [![Coverage Status](https://coveralls.io/repos/github/anthonynahas/ngx-material-pages/badge.svg?branch=master)](https://coveralls.io/github/anthonynahas/ngx-material-pages?branch=master)
 [![dependency Status](https://david-dm.org/anthonynahas/ngx-material-pages/status.svg)](https://david-dm.org/anthonynahas/ngx-material-pages)
 [![devDependency Status](https://david-dm.org/anthonynahas/ngx-material-pages/dev-status.svg?branch=master)](https://david-dm.org/anthonynahas/ngx-material-pages#info=devDependencies)
 [![Greenkeeper Badge](https://badges.greenkeeper.io/anthonynahas/ngx-material-pages.svg)](https://greenkeeper.io/)
 [![license](https://img.shields.io/github/license/anthonynahas/ngx-material-pages.svg?style=flat-square)](https://github.com/AnthonyNahas/ngx-material-pages/blob/master/LICENSE)
+
+> This project has been moved to [@angular-material-extensions/pages](https://github.com/angular-material-extensions/pages)
 
 <p align="center">
   <img alt="ngx-material-pages" style="text-align: center;"
@@ -45,6 +48,8 @@ View all the directives in action at https://anthonynahas.github.io/ngx-material
 - [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
 - [material icons](https://material.angular.io/guide/getting-started#step-6-optional-add-material-icons)
 - if you need a built in theme --> please let me know
+
+> This project has been renamed from [ngx-material-pages](https://www.npmjs.com/package/ngx-material-pages) to [@angular-material-extensions/pages](https://github.com/angular-material-extensions/pages)
 
 ## Install Peer Dependencies - [help](https://material.angular.io/guide/getting-started#step-1-install-angular-material-and-angular-cdk)
 ```bash
@@ -165,13 +170,21 @@ This library consists of 4 essential components.
 - [ngx-material-faq](https://anthonynahas.github.io/ngx-material-faq/getting-started)
 - [combination-generator](https://anthonynahas.github.io/combination-generator/getting-started)
 
+<a name="other-angular-libraries"/>
+
 ## Other Angular Libraries
 - [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
-- [ngx-material-password-strength](https://github.com/AnthonyNahas/ngx-material-password-strength)
+- [@angular-material-extensions/password-strength](https://github.com/angular-material-extensions/password-strength)
+- [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
+- [@angular-material-extensions/cards](https://github.com/angular-material-extensions/cards)
+- [@angular-material-extensions/faq](https://github.com/angular-material-extensions/faq)
+- [@angular-material-extensions/combination-generator](https://github.com/angular-material-extensions/combination-generator)
 
 ## Support
-Drop an email to: [Anthony Nahas](mailto:anthony.na@hotmail.de) and I will help you!
-
++ Drop an email to: [Anthony Nahas](mailto:anthony.na@hotmail.de) and I will help you
++ or open an appropriate [issue](https://github.com/anthonynahas/ngx-material-pages/issues)
++ let us chat on [Gitter](https://gitter.im/angular-material-extensions/Lobby)
+ 
 ## License
 
 Copyright (c) 2018 [Anthony Nahas](mailto:anthony.na@hotmail.de). Licensed under the MIT License (MIT)
