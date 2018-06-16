@@ -1,7 +1,7 @@
 {
   "name": "ngx-material-pages",
   "description": "Open source library for angular apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes)",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "homepage": "https://github.com/anthonynahas/ngx-material-pages",
   "author": {
     "name": "anthonynahas",

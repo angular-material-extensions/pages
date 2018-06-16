@@ -1,3 +1,8 @@
+<a name="1.3.2"></a>
+## [1.3.2](https://github.com/anthonynahas/ngx-material-pages/compare/v1.3.1...v1.3.2) (2018-06-16)
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/anthonynahas/ngx-material-pages/compare/v1.3.0...v1.3.1) (2018-05-15)
 
