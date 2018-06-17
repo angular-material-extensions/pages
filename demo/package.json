@@ -38,7 +38,7 @@
     "ngx-auth-firebaseui": "^1.1.1",
     "ngx-clipboard": "11.1.1",
     "ngx-disqus": "^2.3.7",
-    "ngx-highlightjs": "1.4.1",
+    "ngx-highlightjs": "2.1.1",
     "rxjs": "^6.2.1",
     "rxjs-compat": "^6.2.1",
     "zone.js": "^0.8.26"
@@ -63,14 +63,14 @@
     "karma-cli": "~1.0.1",
     "karma-coverage-istanbul-reporter": "^2.0.1",
     "karma-jasmine": "~1.1.0",
-    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-jasmine-html-reporter": "^1.1.0",
     "protractor": "~5.3.2",
     "reflect-metadata": "~0.1.10",
     "ts-loader": "~4.4.1",
-    "ts-node": "~3.2.0",
+    "ts-node": "~6.1.1",
     "tslint": "~5.9.1",
     "typescript": "2.7.2",
-    "webpack-node-externals": "~1.6.0",
+    "webpack-node-externals": "~1.7.2",
     "@angular-devkit/build-angular": "~0.6.0"
   }
 }
