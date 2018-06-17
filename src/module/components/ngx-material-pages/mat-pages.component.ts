@@ -5,16 +5,16 @@ import {
   OnInit, Output,
   QueryList, Renderer2, ViewChild
 } from '@angular/core';
-import {NgxMaterialPageLoaderComponent} from './ngx-material-page-loader/ngx-material-page-loader.component';
+import {MatPageLoaderComponent} from './mat-page-loader/mat-page-loader.component';
 import {StepperSelectionEvent} from '@angular/cdk/stepper';
 import {MatSidenav, MatTabGroup} from '@angular/material';
 
 @Component({
-  selector: 'ngx-material-pages',
-  templateUrl: './ngx-material-pages.component.html',
-  styleUrls: ['./ngx-material-pages.component.scss']
+  selector: 'mat-pages',
+  templateUrl: './mat-pages.component.html',
+  styleUrls: ['./mat-pages.component.scss']
 })
-export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
+export class MatPagesComponent implements OnInit, AfterContentInit {
 
   @ViewChild('sidenav')
   sidenav: MatSidenav;
@@ -22,8 +22,8 @@ export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
   @ViewChild(MatTabGroup, {read: ElementRef})
   tabHeader: ElementRef;
 
-  @ContentChildren(NgxMaterialPageLoaderComponent)
-  pages: QueryList<NgxMaterialPageLoaderComponent>;
+  @ContentChildren(MatPageLoaderComponent)
+  pages: QueryList<MatPageLoaderComponent>;
 
   @Input()
   title: string;

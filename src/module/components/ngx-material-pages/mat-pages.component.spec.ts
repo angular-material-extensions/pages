@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxMaterialPagesComponent } from './ngx-material-pages.component';
+import { MatPagesComponent } from './mat-pages.component';
 
 describe('NgxMaterialPagesComponent', () => {
-  let component: NgxMaterialPagesComponent;
-  let fixture: ComponentFixture<NgxMaterialPagesComponent>;
+  let component: MatPagesComponent;
+  let fixture: ComponentFixture<MatPagesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxMaterialPagesComponent ]
+      declarations: [ MatPagesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxMaterialPagesComponent);
+    fixture = TestBed.createComponent(MatPagesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
