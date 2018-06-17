@@ -77,8 +77,8 @@ const argv = yargs
   .argv;
 
 const config = {
-  libraryName: 'ngx-material-pages',
-  unscopedLibraryName: 'ngx-material-pages',
+  libraryName: '@angular-material-extensions/pages',
+  unscopedLibraryName: 'pages',
   allSrc: 'src/**/*',
   allTs: 'src/**/!(*.spec).ts',
   allSass: 'src/**/*.+(scss|sass)',

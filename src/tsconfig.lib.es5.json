@@ -13,8 +13,8 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "genDir": "../tmp/lib-gen-dir/",
-    "flatModuleOutFile": "ngx-material-pages.js",
-    "flatModuleId": "ngx-material-pages",
+    "flatModuleOutFile": "pages.js",
+    "flatModuleId": "@angular-material-extensions/pages",
     "annotateForClosureCompiler": true
   }
 }
