@@ -1,1 +1,1 @@
-export * from './module/ngx-material-pages.module';
+export * from './module/mat-pages.module';
