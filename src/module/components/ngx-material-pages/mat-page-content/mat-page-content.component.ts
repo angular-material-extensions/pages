@@ -1,12 +1,12 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit, TemplateRef, ViewChild, ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: 'ngx-material-page-content',
-  templateUrl: './ngx-material-page-content.component.html',
-  styleUrls: ['./ngx-material-page-content.component.scss'],
+  selector: 'mat-page-content',
+  templateUrl: './mat-page-content.component.html',
+  styleUrls: ['./mat-page-content.component.scss'],
 
 })
-export class NgxMaterialPageContentComponent implements OnInit {
+export class MatPageContentComponent implements OnInit {
 
   /** Template for page content. */
   @ViewChild(TemplateRef) content: TemplateRef<any>;
