@@ -12,14 +12,14 @@ import {
 
 
 @Component({
-  selector: 'ngx-material-page-outlook',
-  templateUrl: './ngx-material-page-outlook.component.html',
-  styleUrls: ['./ngx-material-page-outlook.component.scss'],
+  selector: 'mat-page-outlook',
+  templateUrl: './mat-page-outlook.component.html',
+  styleUrls: ['./mat-page-outlook.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 
 })
-export class NgxMaterialPageOutlookComponent implements OnInit {
+export class MatPageOutlookComponent implements OnInit {
 
   /** Template for page outlook content. */
   @ViewChild(TemplateRef) content: TemplateRef<any>;

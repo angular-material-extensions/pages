@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxMaterialPageOutlookComponent } from './ngx-material-page-outlook.component';
+import { MatPageOutlookComponent } from './mat-page-outlook.component';
 
 describe('NgxMaterialPageOutlookComponent', () => {
-  let component: NgxMaterialPageOutlookComponent;
-  let fixture: ComponentFixture<NgxMaterialPageOutlookComponent>;
+  let component: MatPageOutlookComponent;
+  let fixture: ComponentFixture<MatPageOutlookComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxMaterialPageOutlookComponent ]
+      declarations: [ MatPageOutlookComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxMaterialPageOutlookComponent);
+    fixture = TestBed.createComponent(MatPageOutlookComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

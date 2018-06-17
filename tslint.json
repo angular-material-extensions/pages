@@ -1,6 +1,6 @@
 {
   "rulesDirectory": [
-      "node_modules/codelyzer"
+    "node_modules/codelyzer"
   ],
   "rules": {
     "arrow-return-shorthand": true,
@@ -110,13 +110,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "ngx-material",
+      "mat",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "ngx-material",
+      "mat",
       "kebab-case"
     ],
     "use-input-property-decorator": true,
