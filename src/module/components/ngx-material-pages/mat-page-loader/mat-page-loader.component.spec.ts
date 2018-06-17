@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxMaterialPageLoaderComponent } from './ngx-material-page-loader.component';
+import { MatPageLoaderComponent } from './mat-page-loader.component';
 
 describe('NgxMaterialPageLoaderComponent', () => {
-  let component: NgxMaterialPageLoaderComponent;
-  let fixture: ComponentFixture<NgxMaterialPageLoaderComponent>;
+  let component: MatPageLoaderComponent;
+  let fixture: ComponentFixture<MatPageLoaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxMaterialPageLoaderComponent ]
+      declarations: [ MatPageLoaderComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxMaterialPageLoaderComponent);
+    fixture = TestBed.createComponent(MatPageLoaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
