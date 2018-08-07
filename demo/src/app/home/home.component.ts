@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle('Home | ngx-material-pages');
+    this.titleService.setTitle('Home | @angular-material-extensions/pages');
   }
 
   pnPageChanges($event) {

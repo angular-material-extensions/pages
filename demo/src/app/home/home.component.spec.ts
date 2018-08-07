@@ -2,7 +2,7 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {DebugElement} from '@angular/core';
 
 import {HomeComponent} from './home.component';
-import {NgxMaterialPagesModule} from 'ngx-material-pages';
+import {MatPagesModule} from '@angular-material-extensions/pages';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -11,7 +11,7 @@ describe('HomeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        NgxMaterialPagesModule.forRoot()],
+        MatPagesModule.forRoot()],
       declarations: [HomeComponent]
     })
       .compileComponents()

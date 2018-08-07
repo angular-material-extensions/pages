@@ -83,17 +83,17 @@ export class GettingStartedComponent implements OnInit {
   // 6
 
   systemJSModuleImport = `map: {
-  'ngx-material-pages': 'node_modules/ngx-material-pages/bundles/ngx-material-pages.umd.js',
+  '@angular-material-extensions/pages': 'node_modules/@angular-material-extensions/pages/bundles/@angular-material-extensions/pages.umd.js',
   }`;
 
-  importNgxMaterialPagesModule = `import { NgxMaterialPagesModule } from 'ngx-material-pages';`;
+  importMatPagesModule = `import { MatPagesModule } from '@angular-material-extensions/pages';`;
 
-  importNgxMaterialPagesModuleInAppModule = `import { NgxMaterialPagesModule } from 'ngx-material-pages';
+  importMatPagesModuleInAppModule = `import { MatPagesModule } from '@angular-material-extensions/pages';
                                               import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
                                               @NgModule({
                                                 declarations: [AppComponent, ...],
-                                                imports: [NgxMaterialPagesModule.forRoot(),
+                                                imports: [MatPagesModule.forRoot(),
                                                 BrowserAnimationsModule,
                                                  ...],
                                                 bootstrap: [AppComponent]
@@ -101,48 +101,48 @@ export class GettingStartedComponent implements OnInit {
                                               export class AppModule {
                                               }`;
 
-  importNgxMaterialPagesModuleInOtherModule = `import { NgxMaterialPagesModule } from 'ngx-material-pages';
+  importMatPagesModuleInOtherModule = `import { MatPagesModule } from '@angular-material-extensions/pages';
 
                                                 @NgModule({
                                                   declarations: [OtherComponent, ...],
-                                                  imports: [NgxMaterialPagesModule, ...],
+                                                  imports: [MatPagesModule, ...],
                                                 })
                                                 export class OtherModule {
                                                 }`;
 
-  example = `<ngx-material-pages>
-               <ngx-material-page-loader>
-                 <ngx-material-page-outlook title="Outlook Title 1">
+  example = `<mat-pages>
+               <mat-page-loader>
+                 <mat-page-outlook title="Outlook Title 1">
                    Outlook Content 1
-                 </ngx-material-page-outlook>
-                 <ngx-material-page-content>
+                 </mat-page-outlook>
+                 <mat-page-content>
                    Page Content 1
-                 </ngx-material-page-content>
-               </ngx-material-page-loader>
-               <ngx-material-page-loader>
-                 <ngx-material-page-outlook title="Outlook Title 2">
+                 </mat-page-content>
+               </mat-page-loader>
+               <mat-page-loader>
+                 <mat-page-outlook title="Outlook Title 2">
                    Outlook Content 2
-                 </ngx-material-page-outlook>
-                 <ngx-material-page-content>
+                 </mat-page-outlook>
+                 <mat-page-content>
                    Page Content 2
-                 </ngx-material-page-content>
-               </ngx-material-page-loader>
-               <ngx-material-page-loader>
-                 <ngx-material-page-outlook title="Outlook Title 3">
+                 </mat-page-content>
+               </mat-page-loader>
+               <mat-page-loader>
+                 <mat-page-outlook title="Outlook Title 3">
                    Outlook Content 3
-                 </ngx-material-page-outlook>
-                 <ngx-material-page-content>
+                 </mat-page-outlook>
+                 <mat-page-content>
                    Page Content 3
-                 </ngx-material-page-content>
-               </ngx-material-page-loader>
-             </ngx-material-pages>`;
+                 </mat-page-content>
+               </mat-page-loader>
+             </mat-pages>`;
 
   constructor(private titleService: Title,
               public snackBar: MatSnackBar) {
   }
 
   ngOnInit() {
-    this.titleService.setTitle('Getting Started | ngx-material-pages');
+    this.titleService.setTitle('Getting Started | @angular-material-extensions/pages');
   }
 
   showCopyMessage(content: string) {

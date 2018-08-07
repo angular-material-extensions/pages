@@ -6,14 +6,14 @@
 
 <section class="getting-started">
   <div class="container">
-    <ngx-material-pages title="ngx-material-pages"
-                        (pageChanged)="onPageChanges($event)"
-                        (done)="onLastPageReached()">
+    <mat-pages title="@angular-material-extensions/pages"
+               (pageChanged)="onPageChanges($event)"
+               (done)="onLastPageReached()">
       <!--1-->
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Setup Development Environment">
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
+      <mat-page-loader>
+        <mat-page-outlook title="Setup Development Environment">
+        </mat-page-outlook>
+        <mat-page-content>
           <mat-card-title>Please make sure that you have <a href="https://nodejs.org/en/" mat-button
                                                             color="primary">NodeJS</a>
             and <a href="https://www.npmjs.com/package/npm" mat-button
@@ -84,14 +84,14 @@
               </div>
             </mat-card-content>
           </mat-card>
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
+        </mat-page-content>
+      </mat-page-loader>
 
       <!--2-->
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Setup Angular App">
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
+      <mat-page-loader>
+        <mat-page-outlook title="Setup Angular App">
+        </mat-page-outlook>
+        <mat-page-content>
           <mat-card-title> Time to begin with Angular</mat-card-title>
           <p>If you have already a setup angular project, you can skip this step, otherwise you can generate a project
             via the angular cli by running the following</p>
@@ -108,7 +108,7 @@
           <div fxLayout="column" fxLayoutAlign="center">
             <video *ngIf="true" autoplay loop>
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fng_g_appname2.mp4?alt=media&token=ebf4b4db-ae9b-4a6a-b9a7-5ef0328d06b7"
+                src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fng_g_appname2.mp4?alt=media&token=ebf4b4db-ae9b-4a6a-b9a7-5ef0328d06b7"
                 type="video/mp4">
             </video>
 
@@ -118,7 +118,7 @@
 
             <video *ngIf="true" autoplay loop>
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fng_g_appname_done2.mp4?alt=media&token=9f76484c-c172-458d-a149-0bc1aed9eddc"
+                src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fng_g_appname_done2.mp4?alt=media&token=9f76484c-c172-458d-a149-0bc1aed9eddc"
                 type="video/mp4">
             </video>
 
@@ -129,24 +129,24 @@
 
             <video *ngIf="true" autoplay loop>
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fcd_angularapp.mp4?alt=media&token=3caa7a63-fe6e-459c-9610-b2744c44fa48"
+                src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fcd_angularapp.mp4?alt=media&token=3caa7a63-fe6e-459c-9610-b2744c44fa48"
                 type="video/mp4">
             </video>
           </div>
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
+        </mat-page-content>
+      </mat-page-loader>
 
       <!--3-->
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Peer dependencies">
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
+      <mat-page-loader>
+        <mat-page-outlook title="Peer dependencies">
+        </mat-page-outlook>
+        <mat-page-content>
           <mat-card-title>Animations + Material + CDK</mat-card-title>
           <div class="comment-container">
-            <p><a href="https://www.npmjs.com/package/ngx-material-pages"
+            <p><a href="https://www.npmjs.com/package/@angular-material-extensions/pages"
                   mat-button
                   color="primary">
-              ngx-material-pages
+              @angular-material-extensions/pages
             </a>
               is built on the top of
               <a href="https://www.npmjs.com/package/@angular/material"
@@ -158,7 +158,7 @@
                  mat-button
                  color="primary">
                 angular component development kit
-              </a> ! That's why we need to install them as peer dependencies to the ngx-material-pages module.
+              </a> ! That's why we need to install them as peer dependencies to the @angular-material-extensions/pages module.
             </p>
           </div>
           <div fxLayout="row" fxLayoutAlign="space-between">
@@ -174,7 +174,7 @@
           <div fxLayoutAlign="center">
             <video *ngIf="true" autoplay loop>
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fnpm_i_material_cdk.mp4?alt=media&token=35bc40f9-9324-4812-9664-e7783f34cb7f"
+                src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fnpm_i_material_cdk.mp4?alt=media&token=35bc40f9-9324-4812-9664-e7783f34cb7f"
                 type="video/mp4">
             </video>
           </div>
@@ -200,7 +200,7 @@
           <div fxLayoutAlign="center">
             <video *ngIf="true" autoplay loop>
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fnpm_i_animations.mp4?alt=media&token=857935d7-15c0-4729-a4fc-069ec837f6e7"
+                src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fnpm_i_animations.mp4?alt=media&token=857935d7-15c0-4729-a4fc-069ec837f6e7"
                 type="video/mp4">
             </video>
           </div>
@@ -216,14 +216,14 @@
             <a href="https://material.angular.io/guide/getting-started#step-2-animations"
                mat-button color="primary">Learn more</a>
           </mat-card-footer>
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
+        </mat-page-content>
+      </mat-page-loader>
 
       <!--4-->
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Material Theme">
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
+      <mat-page-loader>
+        <mat-page-outlook title="Material Theme">
+        </mat-page-outlook>
+        <mat-page-content>
           <mat-card-title>Styling and more...</mat-card-title>
           <div class="comment-container">
             <p>In order to use angular material/ material design, we need include at least one theme.
@@ -243,7 +243,7 @@
           <div fxLayoutAlign="center">
             <video *ngIf="true" autoplay loop>
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fimport_theme.mp4?alt=media&token=db75ee75-af9d-43cf-9d32-f3dfe0775d2d"
+                src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fimport_theme.mp4?alt=media&token=db75ee75-af9d-43cf-9d32-f3dfe0775d2d"
                 type="video/mp4">
             </video>
           </div>
@@ -253,7 +253,7 @@
           <div fxLayoutAlign="center">
             <video *ngIf="true" autoplay loop>
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fimport_custom_theme.mp4?alt=media&token=8005cacf-e4ae-49fa-b8c4-d42381df4126"
+                src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fimport_custom_theme.mp4?alt=media&token=8005cacf-e4ae-49fa-b8c4-d42381df4126"
                 type="video/mp4">
             </video>
           </div>
@@ -276,14 +276,14 @@
             <a href="https://material.angular.io/guide/theming"
                mat-button color="primary">Learn more about angular material themes</a>
           </div>
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
+        </mat-page-content>
+      </mat-page-loader>
 
       <!--5-->
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Material Icons">
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
+      <mat-page-loader>
+        <mat-page-outlook title="Material Icons">
+        </mat-page-outlook>
+        <mat-page-content>
           <mat-card-title>Linking the icons</mat-card-title>
           <div class="comment-container">
             <p>The easiest way to load the material design icons is to provide the
@@ -305,7 +305,7 @@
           <div fxLayoutAlign="center">
             <video *ngIf="true" autoplay loop>
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Flink_material_design_icons.mp4?alt=media&token=4e1dbeef-62cd-48bd-86a4-7d048ac41921"
+                src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Flink_material_design_icons.mp4?alt=media&token=4e1dbeef-62cd-48bd-86a4-7d048ac41921"
                 type="video/mp4">
             </video>
           </div>
@@ -379,7 +379,7 @@
           <div fxLayoutAlign="center">
             <video *ngIf="true" autoplay loop>
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fmaterial_design_icons_self_hosting.mp4?alt=media&token=feb23e5c-a060-4206-bbd2-2f3b9de93851"
+                src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fmaterial_design_icons_self_hosting.mp4?alt=media&token=feb23e5c-a060-4206-bbd2-2f3b9de93851"
                 type="video/mp4">
             </video>
           </div>
@@ -388,38 +388,38 @@
               <mat-icon color="accent">done</mat-icon>
             </p>
           </div>
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
+        </mat-page-content>
+      </mat-page-loader>
 
       <!--6-->
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Installation">
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
+      <mat-page-loader>
+        <mat-page-outlook title="Installation">
+        </mat-page-outlook>
+        <mat-page-content>
           <mat-card-title>Here we go
             <mat-icon>flight_takeoff</mat-icon>
           </mat-card-title>
           <div class="comment-container">
             Open a new terminal and run the following command to get
-            <a href="https://www.npmjs.com/package/ngx-material-pages" mat-button
-               color="primary">ngx-material-pages</a>
+            <a href="https://www.npmjs.com/package/@angular-material-extensions/pages" mat-button
+               color="primary">@angular-material-extensions/pages</a>
             from npm
           </div>
           <div fxLayout="row" fxLayoutAlign="space-between">
             <pre><code highlight
-                       [code]="'$ npm i -s ngx-material-pages'"></code></pre>
+                       [code]="'$ npm i -s @angular-material-extensions/pages'"></code></pre>
             <button mat-icon-button
                     ngxClipboard
-                    [cbContent]="'npm i -s ngx-material-pages'"
+                    [cbContent]="'npm i -s @angular-material-extensions/pages'"
                     matTooltip="copy"
-                    (click)="showCopyMessage('npm i -s ngx-material-pages')">
+                    (click)="showCopyMessage('npm i -s @angular-material-extensions/pages')">
               <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
             </button>
           </div>
           <div fxLayoutAlign="center">
             <video *ngIf="true" autoplay loop>
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fnpm_i_ngx_material_pages.mp4?alt=media&token=f3ab908d-bbf1-425d-9058-cacdc1753ba0"
+                src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fnpm_i_ngx_material_pages.mp4?alt=media&token=f3ab908d-bbf1-425d-9058-cacdc1753ba0"
                 type="video/mp4">
             </video>
           </div>
@@ -431,7 +431,7 @@
             <mat-card-subtitle>
               Note:If you are using SystemJS, you should adjust your configuration to point to the UMD
               bundle. In your systemjs config file, map needs to tell the System loader where to look for
-              ngx-material-pages
+              @angular-material-extensions/pages
             </mat-card-subtitle>
             <mat-card-content>
               <div fxLayout="row" fxLayoutAlign="space-between">
@@ -452,67 +452,67 @@
           </div>
           <div fxLayout="row" fxLayoutAlign="space-between">
                  <pre><code highlight
-                            [code]="importNgxMaterialPagesModule"></code></pre>
+                            [code]="importMatPagesModule"></code></pre>
             <button mat-icon-button
                     ngxClipboard
-                    [cbContent]="importNgxMaterialPagesModule"
+                    [cbContent]="importMatPagesModule"
                     matTooltip="copy"
-                    (click)="showCopyMessage(importNgxMaterialPagesModule)">
+                    (click)="showCopyMessage(importMatPagesModule)">
               <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
             </button>
           </div>
           <div class="comment-container">
             <p>The only remaining part is to list the imported module in your application module. The exact method
               will be slightly different for the root (top-level) module for which you should end up with the code
-              similar to (notice NgxMaterialPagesModule .forRoot()):
+              similar to (notice MatPagesModule .forRoot()):
 
               NB: please do not forget to import the angular animations module in your root component too!
               (usally app.component.ts)</p>
           </div>
           <div fxLayout="row" fxLayoutAlign="space-between">
                  <pre><code highlight
-                            [code]="importNgxMaterialPagesModuleInAppModule"></code></pre>
+                            [code]="importMatPagesModuleInAppModule"></code></pre>
             <button mat-icon-button
                     ngxClipboard
-                    [cbContent]="importNgxMaterialPagesModuleInAppModule"
+                    [cbContent]="importMatPagesModuleInAppModule"
                     matTooltip="copy"
-                    (click)="showCopyMessage(importNgxMaterialPagesModuleInAppModule)">
+                    (click)="showCopyMessage(importMatPagesModuleInAppModule)">
               <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
             </button>
           </div>
           <div class="comment-container">
-            <p>Other modules in your application can simply import NgxMaterialPagesModule:</p>
+            <p>Other modules in your application can simply import MatPagesModule:</p>
           </div>
           <div fxLayout="row" fxLayoutAlign="space-between">
                  <pre><code highlight
-                            [code]="importNgxMaterialPagesModuleInOtherModule"></code></pre>
+                            [code]="importMatPagesModuleInOtherModule"></code></pre>
             <button mat-icon-button
                     ngxClipboard
-                    [cbContent]="importNgxMaterialPagesModuleInOtherModule"
+                    [cbContent]="importMatPagesModuleInOtherModule"
                     matTooltip="copy"
-                    (click)="showCopyMessage(importNgxMaterialPagesModuleInOtherModule)">
+                    (click)="showCopyMessage(importMatPagesModuleInOtherModule)">
               <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
             </button>
           </div>
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
+        </mat-page-content>
+      </mat-page-loader>
 
       <!--7-->
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Usage">
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
+      <mat-page-loader>
+        <mat-page-outlook title="Usage">
+        </mat-page-outlook>
+        <mat-page-content>
           <mat-card-title>Library's components</mat-card-title>
           <mat-card-subtitle>This library consists of 4 essential components.</mat-card-subtitle>
           <mat-card-content>
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fscreenshot%202.png?alt=media&token=214c5a6e-e75d-4a3c-a18d-192acddadd9b"
+              src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fscreenshot%202.png?alt=media&token=214c5a6e-e75d-4a3c-a18d-192acddadd9b"
               alt="screenshot ">
             <div class="comment-container">
               <pre><code highlight
-                         [code]="'<ngx-material-pages></ngx-material-pages>'"></code></pre>
+                         [code]="'<@angular-material-extensions/pages></@angular-material-extensions/pages>'"></code></pre>
 
-              <p>ngx-material-pages the main container that hold the pages incl. the outlook view and the content</p>
+              <p>@angular-material-extensions/pages the main container that hold the pages incl. the outlook view and the content</p>
 
               <pre><code highlight
                          [code]="'<ngx-material-page-loader></ngx-material-page-loader>'"></code></pre>
@@ -546,16 +546,16 @@
               </div>
             </mat-card-content>
           </mat-card>
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
+        </mat-page-content>
+      </mat-page-loader>
 
       <!--8-->
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Run demo locally">
+      <mat-page-loader>
+        <mat-page-outlook title="Run demo locally">
           <img style="width: 50px; height: 50px" src="../../assets/icons/github.svg">
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
-          <mat-card-title-group><a href="https://github.com/AnthonyNahas/ngx-material-pages"
+        </mat-page-outlook>
+        <mat-page-content>
+          <mat-card-title-group><a href="https://github.com/AnthonyNahas/@angular-material-extensions/pages"
                                    mat-button
                                    color="primary">Clone the repo</a></mat-card-title-group>
           <mat-card-title>Interested? Try it out on your machine
@@ -565,12 +565,12 @@
           </div>
           <div fxLayout="row" fxLayoutAlign="space-between">
                  <pre><code highlight
-                            [code]="'git clone https://github.com/AnthonyNahas/ngx-material-pages.git'"></code></pre>
+                            [code]="'git clone https://github.com/AnthonyNahas/@angular-material-extensions/pages.git'"></code></pre>
             <button mat-icon-button
                     ngxClipboard
-                    [cbContent]="'git clone https://github.com/AnthonyNahas/ngx-material-pages.git'"
+                    [cbContent]="'git clone https://github.com/AnthonyNahas/@angular-material-extensions/pages.git'"
                     matTooltip="copy"
-                    (click)="showCopyMessage('git clone https://github.com/AnthonyNahas/ngx-material-pages.git')">
+                    (click)="showCopyMessage('git clone https://github.com/AnthonyNahas/@angular-material-extensions/pages.git')">
               <mat-icon aria-label="copy content" class="mat-18">content_copy</mat-icon>
             </button>
           </div>
@@ -619,10 +619,10 @@
           <div class="comment-container">
             <p>the app is now hosted on http://localhost:4200/</p>
           </div>
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
+        </mat-page-content>
+      </mat-page-loader>
 
-    </ngx-material-pages>
+    </mat-pages>
 
     <div style="margin-top: 2rem">
       <disqus [identifier]="'Rz2ZGCDL0n3M'"></disqus>

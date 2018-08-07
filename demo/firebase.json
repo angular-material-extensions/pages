@@ -1,5 +1,5 @@
 {
-  "firebase": "ngx-material-pages",
+  "firebase": "@angular-material-extensions/pages",
   "public": "dist/browser",
   "ignore": [
     "firebase.json",

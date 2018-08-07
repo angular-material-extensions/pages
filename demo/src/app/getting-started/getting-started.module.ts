@@ -6,7 +6,7 @@ import {MatButtonModule, MatCardModule, MatDividerModule, MatIconModule, MatSnac
 import {HighlightModule} from 'ngx-highlightjs';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {ClipboardModule} from 'ngx-clipboard';
-import {NgxMaterialPagesModule} from 'ngx-material-pages';
+import {MatPagesModule} from '@angular-material-extensions/pages';
 import {DisqusModule} from 'ngx-disqus';
 import {OverlayModule} from '@angular/cdk/overlay';
 
@@ -14,8 +14,8 @@ import {OverlayModule} from '@angular/cdk/overlay';
   imports: [
     CommonModule,
     GettingStartedRoutingModule,
-    NgxMaterialPagesModule.forRoot(),
-    DisqusModule.forRoot('ngx-material-pages'),
+    MatPagesModule.forRoot(),
+    DisqusModule.forRoot('@angular-material-extensions/pages'),
     HighlightModule.forRoot(),
     ClipboardModule,
     FlexLayoutModule,

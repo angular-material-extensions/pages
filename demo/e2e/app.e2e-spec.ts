@@ -1,6 +1,6 @@
 import { NgxMaterialPagesDemoPage } from './app.po';
 
-describe('ngx-material-pages-demo App', () => {
+describe('@angular-material-extensions/pages-demo App', () => {
   let page: NgxMaterialPagesDemoPage;
 
   beforeEach(() => {

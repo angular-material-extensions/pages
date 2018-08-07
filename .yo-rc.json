@@ -4,8 +4,8 @@
     "authorName": "anthonynahas",
     "authorEmail": "anthony.na@hotmail.de",
     "githubUsername": "anthonynahas",
-    "githubRepoName": "ngx-material-pages",
-    "projectName": "ngx-material-pages",
+    "githubRepoName": "@angular-material-extensions/pages",
+    "projectName": "@angular-material-extensions/pages",
     "projectVersion": "0.0.1",
     "projectDescription": "Open source library for angular apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes)",
     "projectKeywords": [

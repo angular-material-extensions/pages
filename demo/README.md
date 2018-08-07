@@ -1,4 +1,4 @@
-# ngx-material-pages-demo
+# @angular-material-extensions/pages-demo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 

@@ -20,7 +20,7 @@ import {OverlayModule} from '@angular/cdk/overlay';
     // Add .withServerTransition() to support Universal rendering.
     // The application ID can be any identifier which is unique on
     // the page.
-    BrowserModule.withServerTransition({appId: 'ngx-material-pages-demo-id'}),
+    BrowserModule.withServerTransition({appId: '@angular-material-extensions/pages-demo-id'}),
     ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     BrowserAnimationsModule,
     FormsModule,

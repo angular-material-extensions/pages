@@ -2,20 +2,20 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4 d-flex justify-content-center justify-content-md-end">
-        <video *ngIf="true" autoplay loop alt="ngx-material-pages demo in iphone" class="logo">
+        <video *ngIf="true" autoplay loop alt="@angular-material-extensions/pages demo in iphone" class="logo">
           <source
-            src="https://firebasestorage.googleapis.com/v0/b/ngx-material-pages.appspot.com/o/tutorials%2Fdemo_iphone.mp4?alt=media&token=0d204cbc-bc10-4d8c-9744-321cb8d5df5b"
+            src="https://firebasestorage.googleapis.com/v0/b/@angular-material-extensions/pages.appspot.com/o/tutorials%2Fdemo_iphone.mp4?alt=media&token=0d204cbc-bc10-4d8c-9744-321cb8d5df5b"
             type="video/mp4">
         </video>
-        <!--<img src="assets/logo.svg" alt="ngx-material-pages logo" class="logo">-->
+        <!--<img src="assets/logo.svg" alt="@angular-material-extensions/pages logo" class="logo">-->
       </div>
       <div class="col-sm-8 text-center text-md-left">
-        <h1>ngx-material-pages</h1>
+        <h1>@angular-material-extensions/pages</h1>
         <p>Open source library for angular apps to illustrate custom material pages content with steps (ideal for
           tutorials and explanation purposes)</p>
         <p>Scroll down to see it in action!</p>
         <p class="buttons">
-          <a class="btn btn-outline-primary btn-lg" href="https://github.com/anthonynahas/ngx-material-pages"
+          <a class="btn btn-outline-primary btn-lg" href="https://github.com/angular-material-extensions/pages"
              target="_blank"><i class="fa fa-github fa-lg"></i> Code on Github</a>
           <a class="btn btn-outline-primary btn-lg" href="doc/index.html" target="_blank"><i
             class="fa fa-book fa-lg"></i> Documentation</a>
@@ -29,14 +29,14 @@
 <section class="home">
   <div class="container">
     <!-- put your content here-->
-    <ngx-material-pages title="ngx-material-pages"
-                        (pageChanged)="pnPageChanges($event)"
-                        (done)="onLastPageReached()">
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Outlook Title 1">
+    <mat-pages title="@angular-material-extensions/pages"
+               (pageChanged)="pnPageChanges($event)"
+               (done)="onLastPageReached()">
+      <mat-page-loader>
+        <mat-page-outlook title="Outlook Title 1">
           Outlook Content 1
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
+        </mat-page-outlook>
+        <mat-page-content>
           <mat-tab-group>
             <mat-tab label="test">
               <mat-card>
@@ -51,25 +51,25 @@
               </mat-card>
             </mat-tab>
           </mat-tab-group>
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Outlook Title 2">
+        </mat-page-content>
+      </mat-page-loader>
+      <mat-page-loader>
+        <mat-page-outlook title="Outlook Title 2">
           Outlook Content 2
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
+        </mat-page-outlook>
+        <mat-page-content>
           Page Content 2
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
-      <ngx-material-page-loader>
-        <ngx-material-page-outlook title="Outlook Title 3">
+        </mat-page-content>
+      </mat-page-loader>
+      <mat-page-loader>
+        <mat-page-outlook title="Outlook Title 3">
           Outlook Content 3
-        </ngx-material-page-outlook>
-        <ngx-material-page-content>
+        </mat-page-outlook>
+        <mat-page-content>
           Page Content 3
-        </ngx-material-page-content>
-      </ngx-material-page-loader>
-    </ngx-material-pages>
+        </mat-page-content>
+      </mat-page-loader>
+    </mat-pages>
 
     <div style="margin-top: 2rem">
       <disqus [identifier]="'60cvuJoZ4qMr'"></disqus>
