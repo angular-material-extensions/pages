@@ -48,7 +48,7 @@
               "ngswConfigPath": "/src/ngsw-config.json",
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
+                  "replace": "src/environments/enironment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
               ]
