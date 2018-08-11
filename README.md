@@ -5,8 +5,7 @@
 
 # @angular-material-extensions/pages - Open source library for Angular Apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes) - Angular v6 supported
 
-
-[![npm version](https://badge.fury.io/js/@angular-material-extensions/pages.svg)](https://badge.fury.io/js/@angular-material-extensions/pages),
+[![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fpagesh.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fpagesh)
 [![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/pages)
 [![Join the chat at https://gitter.im/angular-material-extensions/Lobby](https://badges.gitter.im/angular-material-extensions/Lobby.svg)](https://gitter.im/angular-material-extensions/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![CircleCI branch](https://img.shields.io/circleci/project/github/angular-material-extensions/pages/master.svg?label=circleci)](https://circleci.com/gh/angular-material-extensions/pages)
