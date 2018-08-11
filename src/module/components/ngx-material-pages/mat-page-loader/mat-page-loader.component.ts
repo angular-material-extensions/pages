@@ -7,20 +7,9 @@ import {MatPageContentComponent} from '../mat-page-content/mat-page-content.comp
   templateUrl: './mat-page-loader.component.html',
   styleUrls: ['./mat-page-loader.component.scss']
 })
-export class MatPageLoaderComponent implements OnInit, AfterContentInit {
+export class MatPageLoaderComponent {
 
   @ContentChild(MatPageOutlookComponent) pageOutlook: MatPageOutlookComponent;
   @ContentChild(MatPageContentComponent) pageContent: MatPageContentComponent;
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
-  ngAfterContentInit(): void {
-    console.log('pagesOutlook:', this.pageOutlook);
-    console.log('pagesContent:', this.pageContent);
-  }
 
 }

@@ -101,7 +101,6 @@ export class MatPagesComponent implements OnInit, AfterContentInit {
    *
    */
   onStepSelectionChange(event: StepperSelectionEvent) {
-    console.log('onStepSelectionChanged');
     this.index = event.selectedIndex;
     this.pageChanged.emit(this.index);
   }
