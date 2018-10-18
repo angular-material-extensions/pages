@@ -42,7 +42,7 @@
     "@angular/cdk": "^6.4.3",
     "@angular/common": "^6.1.2",
     "@angular/core": "^6.1.2",
-    "@angular/material": "^6.4.3"
+    "@angular/material": "^7.0.0"
   },
   "devDependencies": {
     "@angular/compiler": "^6.1.2",
