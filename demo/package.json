@@ -38,7 +38,7 @@
     "ngx-auth-firebaseui": "^1.2.0",
     "ngx-clipboard": "11.1.1",
     "ngx-disqus": "^2.4.0",
-    "ngx-highlightjs": "2.1.1",
+    "ngx-highlightjs": "2.1.2",
     "rxjs": "^6.2.2",
     "rxjs-compat": "^6.2.2",
     "zone.js": "^0.8.26"
