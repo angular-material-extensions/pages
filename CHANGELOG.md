@@ -1,14 +1,26 @@
-<a name="2.0.0"></a>
+# [2.1.0](https://github.com/angular-material-extensions/pages/compare/v2.0.0...v2.1.0) (2018-11-02)
+
+
+### Bug Fixes
+
+* **package:** adjusted the "ngswConfigPath" ([abf40a8](https://github.com/angular-material-extensions/pages/commit/abf40a8))
+* **project:** minor ([da3f437](https://github.com/angular-material-extensions/pages/commit/da3f437))
+
+
+### Features
+
+* **package:** support of angular v7 ([0f51db6](https://github.com/angular-material-extensions/pages/commit/0f51db6))
+
+
+
 # [2.0.0](https://github.com/angular-material-extensions/pages/compare/v1.3.2...v2.0.0) (2018-08-11)
 
 
 
-<a name="1.3.2"></a>
 ## [1.3.2](https://github.com/angular-material-extensions/pages/compare/v1.3.1...v1.3.2) (2018-06-16)
 
 
 
-<a name="1.3.1"></a>
 ## [1.3.1](https://github.com/angular-material-extensions/pages/compare/v1.3.0...v1.3.1) (2018-05-15)
 
 
@@ -18,7 +30,6 @@
 
 
 
-<a name="1.3.0"></a>
 # [1.3.0](https://github.com/angular-material-extensions/pages/compare/v1.2.1...v1.3.0) (2018-05-10)
 
 
@@ -28,12 +39,10 @@
 
 
 
-<a name="1.2.1"></a>
 ## [1.2.1](https://github.com/angular-material-extensions/pages/compare/v1.2.0...v1.2.1) (2018-04-22)
 
 
 
-<a name="1.2.0"></a>
 # [1.2.0](https://github.com/angular-material-extensions/pages/compare/v1.1.6...v1.2.0) (2018-04-16)
 
 
@@ -43,7 +52,6 @@
 
 
 
-<a name="1.1.6"></a>
 ## [1.1.6](https://github.com/angular-material-extensions/pages/compare/v1.1.5...v1.1.6) (2018-04-15)
 
 
@@ -55,17 +63,14 @@
 
 
 
-<a name="1.1.5"></a>
 ## [1.1.5](https://github.com/angular-material-extensions/pages/compare/v1.1.4...v1.1.5) (2018-04-12)
 
 
 
-<a name="1.1.4"></a>
 ## [1.1.4](https://github.com/angular-material-extensions/pages/compare/v1.1.3...v1.1.4) (2018-04-12)
 
 
 
-<a name="1.1.3"></a>
 ## [1.1.3](https://github.com/angular-material-extensions/pages/compare/v1.1.2...v1.1.3) (2018-04-12)
 
 
@@ -75,17 +80,14 @@
 
 
 
-<a name="1.1.2"></a>
 ## [1.1.2](https://github.com/angular-material-extensions/pages/compare/v1.1.1...v1.1.2) (2018-04-11)
 
 
 
-<a name="1.1.1"></a>
 ## [1.1.1](https://github.com/angular-material-extensions/pages/compare/v1.1.0...v1.1.1) (2018-04-10)
 
 
 
-<a name="1.1.0"></a>
 # [1.1.0](https://github.com/angular-material-extensions/pages/compare/v1.0.1...v1.1.0) (2018-04-10)
 
 
@@ -96,12 +98,10 @@
 
 
 
-<a name="1.0.1"></a>
 ## [1.0.1](https://github.com/angular-material-extensions/pages/compare/v1.0.0...v1.0.1) (2018-04-09)
 
 
 
-<a name="1.0.0"></a>
 # [1.0.0](https://github.com/angular-material-extensions/pages/compare/v0.0.1...v1.0.0) (2018-04-09)
 
 
@@ -126,7 +126,6 @@
 
 
 
-<a name="0.0.1"></a>
 ## 0.0.1 (2018-04-08)
 
 
