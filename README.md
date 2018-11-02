@@ -3,7 +3,7 @@
 </p>
 
 
-# @angular-material-extensions/pages - Open source library for Angular Apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes) - Angular v6 supported
+# @angular-material-extensions/pages - Open source library for Angular Apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes) - Angular V7 supported
 
 [![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fpages.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fpages)
 [![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/pages)
@@ -62,8 +62,8 @@ by starring :star: and sharing it :loudspeaker:
 View all the directives and components in action at [https://angular-material-extensions.github.io/pages](https://angular-material-extensions.github.io/pages)
 
 ## Dependencies
-* [Angular](https://angular.io) (*requires* Angular 2 or higher)
-- if you are still using angular v5, please the following version `1.2.1`
+* [Angular](https://angular.io) (*requires*) tested with V7
+- if you are still using angular v5 or lower, please use the following version `1.2.1`
 
 
 > This project has been renamed from [@angular-material-extensions/pages](https://www.npmjs.com/package/@angular-material-extensions/pages) to [@angular-material-extensions/pages](https://github.com/angular-material-extensions/pages)
@@ -71,9 +71,9 @@ View all the directives and components in action at [https://angular-material-ex
 <a name="peerDependencies"/>
 
 ## Peer Dependencies
-- [angular animations v6.0.5](https://www.npmjs.com/package/@angular/animations)
-- [angular material v6.2.1](https://www.npmjs.com/package/@angular/material)
-- [angular cdk v6.2.1](https://www.npmjs.com/package/@angular/cdk)
+- [angular animations v7.0.2](https://www.npmjs.com/package/@angular/animations)
+- [angular material v7.0.2](https://www.npmjs.com/package/@angular/material)
+- [angular cdk v7.0.2](https://www.npmjs.com/package/@angular/cdk)
 
 > [learn more about angular material and cdk](https://material.angular.io/guide/getting-started#step-1-install-angular-material-and-angular-cdk)
 
