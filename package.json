@@ -53,7 +53,7 @@
     "@angular/platform-browser": "^7.0.2",
     "@angular/platform-browser-dynamic": "^7.0.2",
     "@angular/platform-server": "^7.0.2",
-    "@compodoc/gulp-compodoc": "^0.0.9",
+    "@compodoc/gulp-compodoc": "^0.0.10",
     "@types/jasmine": "^2.8.9",
     "@types/lodash": "^4.14.117",
     "@types/node": "^10.12.2",
