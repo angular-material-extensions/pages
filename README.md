@@ -50,7 +50,6 @@ by starring :star: and sharing it :loudspeaker:
 - [Usage](#usage)
 - [Documentation](#documentation)
 - [Run Demo App Locally](#run-demo-app-locally)
-- [Development](#development)
 - [Other Angular Libraries](#other-angular-libraries)
 - [Support](#support)
 - [License](#license)
@@ -71,9 +70,9 @@ View all the directives and components in action at [https://angular-material-ex
 <a name="peerDependencies"/>
 
 ## Peer Dependencies
-- [angular animations v7.0.2](https://www.npmjs.com/package/@angular/animations)
-- [angular material v7.0.2](https://www.npmjs.com/package/@angular/material)
-- [angular cdk v7.0.2](https://www.npmjs.com/package/@angular/cdk)
+- [angular animations v7.x](https://www.npmjs.com/package/@angular/animations)
+- [angular material v7.x](https://www.npmjs.com/package/@angular/material)
+- [angular cdk v7.x](https://www.npmjs.com/package/@angular/cdk)
 
 > [learn more about angular material and cdk](https://material.angular.io/guide/getting-started#step-1-install-angular-material-and-angular-cdk)
 
@@ -258,23 +257,15 @@ $ git clone https://github.com/angular-material-extensions/pages.git
 ```
 
 - link the **@angular-material-extensions/pages** package
-use gulp globally
+
 ```bash
 $ gulp link
 ```
 
-use gulp locally
+- build the library
+
 ```bash
-$ npx gulp link
-```
-for some mac os users, you may use the sudo command with gulp
-use gulp with sudo
-```bash
-$ sudo gulp link
-```
-or locally 
-```bash
-$ sudo npx gulp link
+$ gulp build
 ```
 
 - navigate to the demo app directory
@@ -295,37 +286,8 @@ or
 ```bash
 $ ng serve --open
 ```
-- the app is now hosted by `http://localhost:4200/`
+- the app is now hosted on `http://localhost:4200/`
 
-
-<a name="development"/>
-
-## Development
-
-1. clone this [repo](https://github.com/angular-material-extensions/pages.git)
-2. Install the dependencies by running `npm i`
-3. build the library `npm run build` or `gulp build`
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
-
-```bash
-$ npm run build
-```
-
-4. Link the library 
-  - on windows `gulp link` or locally `npx gulp link`
-  - on mac/linux `sudo gulp link` or locally `sudo npx gulp link`
-  
- 5. Navigate to the demo app's directory
-  - `cd demo`
-  _ `npm i`
-  _ `npm start`
-
-extras
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
 
 ## Where are @angular-material-extensions/pages being used ? Here are some examples
 - [ngx-auth-firebaseui](https://ngx-auth-firebaseui.firebaseapp.com/getting-started)
@@ -345,7 +307,6 @@ $ npm run lint
 - [@angular-material-extensions/link-preview](https://github.com/angular-material-extensions/link-preview)
 - [@angular-material-extensions/google-maps-autocomplete](https://github.com/angular-material-extensions/google-maps-autocomplete)
 - [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
-- [@angular-material-extensions/cards](https://github.com/angular-material-extensions/cards)
 - [@angular-material-extensions/jumbotron](https://github.com/angular-material-extensions/jumbotron)
 - [@angular-material-extensions/faq](https://github.com/angular-material-extensions/faq)
 - [@angular-material-extensions/combination-generator](https://github.com/angular-material-extensions/combination-generator)
