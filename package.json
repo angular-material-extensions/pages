@@ -119,7 +119,7 @@
     "zone.js": "^0.8.26"
   },
   "peerDependencies": {
-    "@angular/cdk": "6.x",
+    "@angular/cdk": "^7.1.1",
     "@angular/material": "^7.1.1"
   },
   "engines": {
