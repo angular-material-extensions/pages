@@ -120,7 +120,7 @@
   },
   "peerDependencies": {
     "@angular/cdk": "6.x",
-    "@angular/material": "6.x"
+    "@angular/material": "^7.2.0"
   },
   "engines": {
     "node": ">=8.x"
