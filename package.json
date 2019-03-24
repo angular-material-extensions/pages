@@ -12,6 +12,7 @@
     "url": "git://github.com/angular-material-extensions/pages.git"
   },
   "license": "MIT",
+  "schematics": "./schematics/collection.json",
   "keywords": [
     "ngx",
     " angular",
@@ -31,6 +32,7 @@
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp build:watch",
+    "build:schematics": "gulp build:schematics",
     "build:watch:fast": "gulp build:watch-fast",
     "test": " gulp test",
     "test:watch": " gulp test:watch",
@@ -45,6 +47,7 @@
     "@angular/material": "^7.2.0"
   },
   "devDependencies": {
+    "@angular-devkit/schematics": "^7.3.6",
     "@angular/compiler": "^7.1.4",
     "@angular/compiler-cli": "^7.1.4",
     "@angular/flex-layout": "^7.0.0-beta.22",
@@ -64,6 +67,7 @@
     "codelyzer": "^4.5.0",
     "commitplease": "^3.2.0",
     "conventional-github-releaser": "2.0.2",
+    "copy-webpack-plugin": "^5.0.2",
     "core-js": "^2.6.1",
     "css-loader": "^1.0.1",
     "cssnano": "^4.1.7",
@@ -106,16 +110,19 @@
     "run-sequence": "^2.2.1",
     "rxjs": "^6.3.3",
     "sass-loader": "^7.1.0",
+    "schematics-utilities": "^1.1.2",
     "source-map-loader": "^0.2.4",
     "to-string-loader": "^1.1.5",
     "travis-status": "^3.0.1",
     "tsickle": "^0.33.1",
     "tslint": "^5.12.0",
     "typescript": "~3.1.6",
-    "webpack": "^4.28.1",
-    "webpack-dev-middleware": "^3.4.0",
-    "webpack-dev-server": "^3.1.10",
-    "yargs": "^12.0.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-middleware": "^3.6.1",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-node-externals": "^1.7.2",
+    "yargs": "^13.2.2",
     "zone.js": "^0.8.26"
   },
   "peerDependencies": {
