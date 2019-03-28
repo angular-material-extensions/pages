@@ -33,8 +33,8 @@ export function addPackageJsonDependencies(): Rule {
         version: loadPackageVersionGracefully(context) || 'latest',
         name: '@angular-material-extensions/pages'
       },
-      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.10', name: '@angular/animations'},
-      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.10', name: '@angular/forms'},
+      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.11', name: '@angular/animations'},
+      {type: NodeDependencyType.Default, version: ngCoreVersionTag || '7.2.11', name: '@angular/forms'},
     ];
 
     dependencies.forEach(dependency => {
@@ -63,9 +63,10 @@ export function addModuleToImports(options: any): Rule {
       // Takes the first project in case it's not provided by CLI
       options.project ? options.project : Object.keys(workspace['projects'])[0]
     );
-    const moduleName = 'MatPagesModule';
+    const moduleName = 'MatPagesModule.forRoot()';
 
     addModuleImportToRootModule(host, moduleName, '@angular-material-extensions/pages', project);
+    addModuleImportToRootModule(host, 'BrowserAnimationsModule', '@angular/platform-browser/animations', project);
     context.logger.log('info', `✅️ "${moduleName}" is imported`);
 
     return host;
