@@ -1,5 +1,7 @@
 # Components
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/angular-material-extensions/components.svg)](https://greenkeeper.io/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
 ## Development server
