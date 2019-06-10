@@ -77,7 +77,7 @@ jobs:
           key: *cache_dialogs_key
       - run:
           name: build-prerender
-          command: npm run build:prerender
+          command: sudo npm run build:prerender
       - save_cache:
           key: *dist_key
           paths:
