@@ -129,9 +129,8 @@ workflows:
       - build-prerender-app:
           requires:
             - install
-            - install-functions
             - build-libraries
-      #            - lint
+            - lint
       #            - test-app
       - release:
           requires:
