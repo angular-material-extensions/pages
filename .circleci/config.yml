@@ -126,7 +126,7 @@ workflows:
       #      - test-app:
       #          requires:
       #            - install
-      - build-libraries
+      - build-libraries:
           requires:
             - lint
       - build-prerender-app:
