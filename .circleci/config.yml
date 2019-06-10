@@ -66,8 +66,6 @@ jobs:
       - restore_cache:
           key: *cache_key
       - run:
-          name: link
-      - run:
           name: build-prerender
           command: npm run build:prerender
       - save_cache:
@@ -122,25 +120,25 @@ workflows:
   build-test-release:
     jobs:
       - install
-      - build-libraries
       - lint:
           requires:
             - install
       #      - test-app:
       #          requires:
       #            - install
+      - build-libraries
+          requires:
+            - lint
       - build-prerender-app:
           requires:
-            - install
             - build-libraries
-            - lint
       #            - test-app
-      - release:
-          requires:
-            - build-prerender-app
-          filters:
-            branches:
-              only: master
+#      - release:
+#          requires:
+#            - build-prerender-app
+#          filters:
+#            branches:
+#              only: master
 #      - deploy-app-prod:
 #          requires:
 #            - release
