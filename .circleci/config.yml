@@ -120,9 +120,9 @@ workflows:
     jobs:
       - install
       - build-libraries
-      #      - lint:
-      #          requires:
-      #            - install
+    - lint:
+        requires:
+          - install
       #      - test-app:
       #          requires:
       #            - install
