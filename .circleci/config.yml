@@ -62,7 +62,7 @@ jobs:
       - run:
           name: build @angular-material-extensions/dialogs library
           command: npm run build:dialogs
-       - save_cache:
+      - save_cache:
           key: *cache_dialogs_key
           paths:
             - dist/angular-material-extensions/dialogs
