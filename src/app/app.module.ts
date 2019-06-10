@@ -10,7 +10,7 @@ import {DialogsModule} from '@angular-material-extensions/dialogs';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     DialogsModule,
     DialogsModule

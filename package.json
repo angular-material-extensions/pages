@@ -5,11 +5,18 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:client-and-server-bundles": "ng build --prod && ng run components:server:production",
     "build:dialogs": "ng build @angular-material-extensions/dialogs",
     "build:dialogs:watch": "ng build @angular-material-extensions/dialogs --watch",
-    "test": "ng test",
+    "build:prerender": "npm run build:client-and-server-bundles && npm run compile:server && npm run generate:prerender",
+    "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
+    "compile:server": "webpack --config webpack.server.config.js --progress --colors",
+    "e2e": "ng e2e",
+    "generate:prerender": "cd dist && node prerender",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "ng test",
+    "serve:prerender": "cd dist/browser && http-server",
+    "serve:ssr": "node dist/server"
   },
   "private": true,
   "dependencies": {
@@ -20,9 +27,15 @@
     "@angular/forms": "~8.0.0",
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
+    "@angular/platform-server": "~8.0.0",
     "@angular/router": "~8.0.0",
+    "@nguniversal/express-engine": "^7.0.2",
+    "@nguniversal/module-map-ngfactory-loader": "^7.0.2",
+    "express": "^4.15.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
+    "ws": "^7.0.0",
+    "xmlhttprequest": "^1.8.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
@@ -31,10 +44,11 @@
     "@angular/cli": "~8.0.2",
     "@angular/compiler-cli": "~8.0.0",
     "@angular/language-service": "~8.0.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "http-server": "^0.11.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -44,9 +58,11 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "ng-packagr": "^5.1.0",
     "protractor": "~5.4.0",
+    "ts-loader": "^5.2.0",
     "ts-node": "~7.0.0",
     "tsickle": "^0.35.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "typescript": "~3.4.3",
+    "webpack-cli": "^3.1.0"
   }
 }
