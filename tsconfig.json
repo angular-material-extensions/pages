@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@angular-material-extensions/dialogs": [
+        "dist/angular-material-extensions/dialogs"
+      ],
+      "@angular-material-extensions/dialogs/*": [
+        "dist/angular-material-extensions/dialogs/*"
+      ]
+    }
   }
 }
