@@ -1,0 +1,159 @@
+version: 2
+
+job_defaults: &job_defaults
+  docker:
+    - image: circleci/node:10-browsers
+      environment:
+        CHROME_BIN: '/usr/bin/google-chrome'
+  working_directory: ~/project/repo
+
+#app
+cache_key: &cache_key components-deps-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+dist_key: &dist_key components-dist-{{ .Revision }}
+
+jobs:
+  install:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - run:
+          name: install-dependencies
+          command: npm ci
+      - save_cache:
+          key: *cache_key
+          paths:
+            - node_modules
+
+  lint:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - run:
+          name: lint
+          command: npm run lint
+
+  test-app:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: test
+          command: npm run test
+
+
+  build-libraries:
+    <<: *job_defaults
+    steps:
+      - run:
+          name: build @angular-material-extensions/dialogs library
+          command: npm run build:dialogs
+
+  build-prerender-app:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *cache_functions_key
+      - run:
+          name: link
+      - run:
+          name: build-prerender
+          command: npm run build:prerender
+      - save_cache:
+          key: *dist_key
+          paths:
+            - dist
+
+  release:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: release
+          command: npm run semantic-release || true
+
+  deploy-app-dev:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *cache_functions_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: use firebase prod
+          command: npx firebase use dev
+      - run:
+          name: deploy-app-dev
+          command: npx firebase deploy --token=$FIREBASE_TOKEN
+
+  deploy-app-prod:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *cache_functions_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: use firebase prod
+          command: npx firebase use prod
+      - run:
+          name: deploy-app-prod
+          command: npx firebase deploy --token=$FIREBASE_TOKEN
+
+workflows:
+  version: 2
+  build-test-release:
+    jobs:
+      - install
+      - build-libraries
+      #      - lint:
+      #          requires:
+      #            - install
+      #      - test-app:
+      #          requires:
+      #            - install
+      - build-prerender-app:
+          requires:
+            - install
+            - install-functions
+            - build-libraries
+      #            - lint
+      #            - test-app
+      - release:
+          requires:
+            - build-prerender-app
+          filters:
+            branches:
+              only: master
+#      - deploy-app-prod:
+#          requires:
+#            - release
+#          filters:
+#            branches:
+#              only: master
+#      - deploy-app-dev:
+#          requires:
+#            - build-prerender-app
+#          filters:
+#            branches:
+#              only: dev
