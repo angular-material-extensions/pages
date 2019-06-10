@@ -1,0 +1,19 @@
+<mat-dialog-content fxLayout="column">
+  <div class="title">
+    {{title}}
+  </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="center center">
+    <mat-form-field class="example-full-width">
+      <input matInput #input [placeholder]="placeholder">
+      <mat-icon matSuffix [color]="color">{{icon}}</mat-icon>
+    </mat-form-field>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions fxLayoutAlign="center center">
+  <button mat-raised-button
+          (click)="dialogRef.close(input.value)"
+          [color]="color">
+    {{textButton}}
+  </button>
+</mat-dialog-actions>

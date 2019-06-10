@@ -1,0 +1,24 @@
+<mat-dialog-content fxLayout="column">
+  <div class="title">
+    {{title}}
+  </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="center center">
+    <mat-form-field>
+      <mat-label>options</mat-label>
+      <mat-select #select>
+        <mat-option *ngFor="let option of options" [value]="option.value">
+          {{option.viewValue ? option.viewValue : option.value}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions fxLayoutAlign="center center">
+  <button mat-raised-button
+          (click)="dialogRef.close(select.selected.value)"
+          [color]="color">
+    {{textButton}}
+  </button>
+</mat-dialog-actions>
+

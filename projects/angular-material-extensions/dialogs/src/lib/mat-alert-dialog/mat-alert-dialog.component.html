@@ -1,0 +1,17 @@
+<mat-dialog-content fxLayout="column" fxLayoutAlign="center center">
+  <mat-icon [color]="type">{{icon}}</mat-icon>
+  <div class="title">
+    {{title}}
+  </div>
+  <div class="subtitle">
+    <p>{{message}}</p>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions fxLayoutAlign="center center">
+  <button mat-raised-button
+          matDialogClose
+          [color]="type">
+    {{okTextButton}}
+  </button>
+</mat-dialog-actions>

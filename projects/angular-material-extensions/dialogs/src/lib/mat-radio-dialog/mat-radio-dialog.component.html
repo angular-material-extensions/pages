@@ -1,0 +1,20 @@
+<mat-dialog-content fxLayout="column">
+  <div class="title">
+    {{title}}
+  </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="center center">
+    <mat-radio-group #radioGroup>
+      <mat-radio-button *ngFor="let option of options" name="more_options"
+                        [value]="option.value">
+        {{option.viewValue ? option.viewValue : option.value}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions fxLayoutAlign="center center">
+  <button mat-raised-button
+          (click)="dialogRef.close(radioGroup.selected.value)"
+          [color]="color">
+    {{textButton}}
+  </button>
+</mat-dialog-actions>
