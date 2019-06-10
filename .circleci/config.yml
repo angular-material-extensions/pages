@@ -52,6 +52,9 @@ jobs:
   build-libraries:
     <<: *job_defaults
     steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
       - run:
           name: build @angular-material-extensions/dialogs library
           command: npm run build:dialogs
