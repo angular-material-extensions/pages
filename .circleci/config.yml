@@ -73,6 +73,8 @@ jobs:
       - checkout
       - restore_cache:
           key: *cache_key
+      - restore_cache:
+          key: *cache_dialogs_key
       - run:
           name: build-prerender
           command: npm run build:prerender
