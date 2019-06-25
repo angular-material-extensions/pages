@@ -24,6 +24,12 @@
       ],
       "@angular-material-extensions/dialogs/*": [
         "dist/angular-material-extensions/dialogs/*"
+      ],
+      "@angular-material-extensions/core": [
+        "dist/angular-material-extensions/core"
+      ],
+      "@angular-material-extensions/core/*": [
+        "dist/angular-material-extensions/core/*"
       ]
     }
   }
