@@ -137,6 +137,8 @@ workflows:
       #          requires:
       #            - install
       - build-libraries:
+          requires:
+            - install
       - build-prerender-app:
           requires:
             - build-libraries
