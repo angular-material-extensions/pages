@@ -5,6 +5,10 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {MatDialogsModule} from '@angular-material-extensions/dialogs';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FooterModule} from './shared/footer/footer';
+import {HomepageModule} from './pages/homepage';
+import {NavBarModule} from './shared/navbar';
+import {ComponentPageTitle} from './pages/page-title/page-title';
 
 @NgModule({
   declarations: [
@@ -14,9 +18,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserModule.withServerTransition({appId: 'serverApp'}),
     AppRoutingModule,
     MatDialogsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HomepageModule,
+    NavBarModule,
+    FooterModule
   ],
-  providers: [],
+  providers: [ComponentPageTitle],
   bootstrap: [AppComponent]
 })
 export class AppModule {

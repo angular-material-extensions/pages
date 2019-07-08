@@ -1,0 +1,39 @@
+material-docs-app {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+app-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+material-docs-app > app-component-sidenav {
+  flex: 1;
+}
+
+material-docs-app > app-homepage,
+material-docs-app > app-guides,
+material-docs-app > guide-viewer {
+  overflow-y: auto;
+}
+
+@media (max-width: 720px) {
+  material-docs-app {
+    top: 92px;
+  }
+
+  material-docs-app > app-homepage,
+  material-docs-app > app-guides,
+  material-docs-app > guide-viewer {
+    overflow-y: visible;
+  }
+}
