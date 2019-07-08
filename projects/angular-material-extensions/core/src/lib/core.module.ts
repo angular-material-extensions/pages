@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CoreComponent } from './core.component';
+import {MatLanguageMenuComponent} from './components/mat-language-menu/mat-language-menu.component';
 
 @NgModule({
-  declarations: [CoreComponent],
+  declarations: [MatLanguageMenuComponent],
   imports: [
   ],
-  exports: [CoreComponent]
+  exports: [MatLanguageMenuComponent]
 })
 export class CoreModule { }

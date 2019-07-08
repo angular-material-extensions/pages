@@ -130,15 +130,13 @@ workflows:
   build-test-release:
     jobs:
       - install
-      - lint:
-          requires:
-            - install
+#      - lint:
+#          requires:
+#            - install
       #      - test-app:
       #          requires:
       #            - install
       - build-libraries:
-          requires:
-            - lint
       - build-prerender-app:
           requires:
             - build-libraries
