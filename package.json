@@ -71,6 +71,7 @@
     "tsickle": "^0.35.0",
     "tslint": "~5.17.0",
     "typescript": "~3.4.3",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^3.3.5",
+    "schematics-utilities": "latest"
   }
 }
