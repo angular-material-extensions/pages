@@ -1,0 +1,163 @@
+<!--<div class="jumbotron jumbotron-fluid">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <div class="col-sm-4 d-flex justify-content-center justify-content-md-end">-->
+<!--        <img src="assets/logo.svg" alt="core logo" class="logo">-->
+<!--      </div>-->
+<!--      <div class="col-sm-8 text-center text-md-left">-->
+<!--        <h1>MatDialogsModule</h1>-->
+<!--        <p>Beautiful prebuilt material dialogs</p>-->
+<!--        <p>Scroll down to see it in action!</p>-->
+<!--        <p class="buttons">-->
+<!--          <a class="btn btn-outline-primary btn-lg" href="https://github.com/angular-material-extensions/core"-->
+<!--             target="_blank"><i class="fa fa-github fa-lg"></i> Code on Github</a>-->
+<!--          <a class="btn btn-outline-primary btn-lg" href="doc/index.html" target="_blank"><i-->
+<!--            class="fa fa-book fa-lg"></i> Documentation</a>-->
+<!--          <a class="btn btn-outline-primary btn-lg" href="#" (click)="editOnStackBlitz()"><i-->
+<!--            class="fa fa-bolt fa-lg"></i> Edit on StackBlitz</a>-->
+<!--        </p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div [fxHide]="shouldHide" class="container">
+
+  <markdown src="assets/md/dialogs/INSTALLATION.md"></markdown>
+  <markdown src="assets/md/dialogs/alert/e1/ts.md"></markdown>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Alert Dialog (Default)</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img fxLayoutAlign="space-around" mat-card-image src="assets/imgs/dialogs/default_alert_dialog.png">
+      <markdown src="assets/md/dialogs/alert/e1/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openAlertDialog(defaultAlertDialogData)">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Alert Dialog (PRIMARY)</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/primary_alert_dialog.png">
+      <markdown src="assets/md/dialogs/alert/e2/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openAlertDialog(primaryAlertDialogData)">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Alert Dialog (ACCENT)</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/accent_alert_dialog.png">
+      <markdown src="assets/md/dialogs/alert/e3/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openAlertDialog(accentAlertDialogData)">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Alert Dialog (WARN)</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/warn_alert_dialog.png">
+      <markdown src="assets/md/dialogs/alert/e4/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openAlertDialog(warnAlertDialogData)">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Confirm Dialog</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/confirm_dialog.png">
+      <markdown src="assets/md/dialogs/confirm/e1/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openConfirmDialog()">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Input Dialog</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/confirm_dialog.png">
+      <markdown src="assets/md/dialogs/confirm/e1/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openInputDialog()">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Async Dialog</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/confirm_dialog.png">
+      <markdown src="assets/md/dialogs/confirm/e1/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openAsyncDialog()">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Radio Dialog</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/confirm_dialog.png">
+      <markdown src="assets/md/dialogs/confirm/e1/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openRadioDialog()">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Select Dialog</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/confirm_dialog.png">
+      <markdown src="assets/md/dialogs/confirm/e1/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openSelectDialog()">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

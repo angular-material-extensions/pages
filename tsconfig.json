@@ -19,6 +19,9 @@
       "dom"
     ],
     "paths": {
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
       "@angular-material-extensions/dialogs": [
         "dist/angular-material-extensions/dialogs"
       ],

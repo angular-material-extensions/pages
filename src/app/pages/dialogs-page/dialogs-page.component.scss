@@ -1,0 +1,13 @@
+.example-card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+mat-card {
+  justify-content: center;
+
+  img {
+    max-width: 400px;
+    object-fit: scale-down;
+  }
+}

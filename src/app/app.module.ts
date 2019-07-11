@@ -9,6 +9,9 @@ import {FooterModule} from './shared/footer/footer';
 import {HomepageModule} from './pages/homepage';
 import {NavBarModule} from './shared/navbar';
 import {ComponentPageTitle} from './pages/page-title/page-title';
+import {SharedModule} from './shared/shared.module';
+import {MarkdownModule} from 'ngx-markdown';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import {ComponentPageTitle} from './pages/page-title/page-title';
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
+    MarkdownModule.forRoot({loader: HttpClient}),
+    HttpClientModule,
     AppRoutingModule,
+    SharedModule,
     MatDialogsModule,
     BrowserAnimationsModule,
     HomepageModule,
