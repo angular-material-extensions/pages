@@ -1,7 +1,7 @@
 {
   "name": "@angular-material-extensions/dialogs",
   "description": "Set of prebuilt extended angular material dialogs as components | simple API and easy to use",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "homepage": "https://github.com/angular-material-extensions/components/tree/master/projects/angular-material-extensions/dialogs",
   "author": {
     "name": "anthonynahas",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/angular-material-extensions/components.git"
+    "url": "https://github.com/angular-material-extensions/components.git"
   },
   "license": "MIT",
   "keywords": [
@@ -37,5 +37,11 @@
   },
   "engines": {
     "node": ">=10.0.0"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.13.18"
   }
 }
