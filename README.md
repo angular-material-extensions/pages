@@ -6,17 +6,16 @@
 
 # @angular-material-extensions/core - Open source library that includes a set of components, directives and services to boost the app development with angular material 2
 
-[![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fcore.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fcore)
-[![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/core)
-[![docs: typedoc](https://img.shields.io/badge/docs-typedoc-4D0080.svg)](https://angular-material-extensions.github.io/core/doc/index.html)
+[![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fdialogs.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fdialogs)
+[![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/components/dialogs)
+[![docs: typedoc](https://img.shields.io/badge/docs-typedoc-4D0080.svg)](https://angular-material-extensions.github.io/components/doc/index.html)
 [![Join the chat at https://gitter.im/angular-material-extensions/Lobby](https://badges.gitter.im/angular-material-extensions/Lobby.svg)](https://gitter.im/angular-material-extensions/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![CircleCI branch](https://img.shields.io/circleci/project/github/angular-material-extensions/core/master.svg?label=circleci)](https://circleci.com/gh/angular-material-extensions/core)
-[![Build Status](https://travis-ci.org/angular-material-extensions/core.svg?branch=master)](https://travis-ci.org/angular-material-extensions/core)
-[![codecov](https://codecov.io/gh/angular-material-extensions/core/branch/master/graph/badge.svg)](https://codecov.io/gh/angular-material-extensions/core)
-[![dependency Status](https://david-dm.org/angular-material-extensions/core/status.svg)](https://david-dm.org/angular-material-extensions/core)
-[![devDependency Status](https://david-dm.org/angular-material-extensions/core/dev-status.svg?branch=master)](https://david-dm.org/angular-material-extensions/core#info=devDependencies)
-[![Greenkeeper Badge](https://badges.greenkeeper.io/angular-material-extensions/core.svg)](https://greenkeeper.io/)
-[![license](https://img.shields.io/github/license/angular-material-extensions/core.svg?style=flat-square)](https://github.com/angular-material-extensions/core/blob/master/LICENSE)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/angular-material-extensions/components/master.svg?label=circleci)](https://circleci.com/gh/angular-material-extensions/components)
+[![codecov](https://codecov.io/gh/angular-material-extensions/components/branch/master/graph/badge.svg)](https://codecov.io/gh/angular-material-extensions/components)
+[![dependency Status](https://david-dm.org/angular-material-extensions/dialogs/status.svg)](https://david-dm.org/angular-material-extensions/dialogs)
+[![devDependency Status](https://david-dm.org/angular-material-extensions/dialogs/dev-status.svg?branch=master)](https://david-dm.org/angular-material-extensions/dialogs#info=devDependencies)
+[![Greenkeeper Badge](https://badges.greenkeeper.io/angular-material-extensions/components.svg)](https://greenkeeper.io/)
+[![license](https://img.shields.io/github/license/angular-material-extensions/components.svg?style=flat-square)](https://github.com/angular-material-extensions/components/blob/master/LICENSE)
 
 ## Built by and for developers :heart:
 Do you have any question or suggestion ? Please do not hesitate to contact us!
@@ -36,7 +35,13 @@ by starring :star: and sharing it :loudspeaker:
 
 ## Demo
 
-View all the directives in action at https://angular-material-extensions.github.io/core
+View all the directives in action at https://angular-material-extensions.github.io/components
+
+## Projects
+
+### @angular-material-extensions/dialogs | [see more](https://github.com/angular-material-extensions/components/tree/master/projects/angular-material-extensions/dialogs)
+
+Set of prebuilt extended angular material dialogs as components | simple API and easy to use
 
 ## Other Angular Libraries
 - [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
@@ -71,5 +76,5 @@ This project is supported by [jetbrains](https://www.jetbrains.com/) with 1 ALL 
 
 ## License
 
-Copyright (c) 2018 Anthony Nahas. Licensed under the MIT License (MIT)
+Copyright (c) 2019 [Anthony Nahas](https://github.com/AnthonyNahas). Licensed under the MIT License (MIT)
 
