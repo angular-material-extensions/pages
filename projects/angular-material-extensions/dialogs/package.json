@@ -1,5 +1,15 @@
 {
   "name": "@angular-material-extensions/dialogs",
+  "description": "Material password strength meter to indicate how secure is the provided password",
+  "homepage": "https://github.com/angular-material-extensions/components/tree/master/projects/angular-material-extensions/dialogs",
+  "author": {
+    "name": "anthonynahas",
+    "url": "https://github.com/anthonynahas"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angular-material-extensions/components.git"
+  },
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.1.0",
