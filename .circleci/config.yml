@@ -83,7 +83,7 @@ jobs:
           paths:
             - dist
 
-  release:
+  release-app:
     <<: *job_defaults
     steps:
       - checkout
@@ -92,7 +92,19 @@ jobs:
       - restore_cache:
           key: *dist_key
       - run:
-          name: release
+          name: release-app
+          command: npm run semantic-release || true
+
+  release-dialogs-lib:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: release-app
           command: npm run semantic-release || true
 
   deploy-app-dev:
@@ -103,9 +115,6 @@ jobs:
           key: *cache_key
       - restore_cache:
           key: *dist_key
-      - run:
-          name: use firebase prod
-          command: npx firebase use dev
       - run:
           name: deploy-app-dev
           command: npx firebase deploy --token=$FIREBASE_TOKEN
@@ -118,9 +127,6 @@ jobs:
           key: *cache_key
       - restore_cache:
           key: *dist_key
-      - run:
-          name: use firebase prod
-          command: npx firebase use prod
       - run:
           name: deploy-app-prod
           command: npx firebase deploy --token=$FIREBASE_TOKEN
@@ -143,18 +149,18 @@ workflows:
           requires:
             - build-libraries
       #            - test-app
-#      - release:
-#          requires:
-#            - build-prerender-app
-#          filters:
-#            branches:
-#              only: master
-#      - deploy-app-prod:
-#          requires:
-#            - release
-#          filters:
-#            branches:
-#              only: master
+      - release-app:
+          requires:
+            - build-prerender-app
+          filters:
+            branches:
+              only: master
+      - deploy-app-prod:
+          requires:
+            - release-app
+          filters:
+            branches:
+              only: master
 #      - deploy-app-dev:
 #          requires:
 #            - build-prerender-app
