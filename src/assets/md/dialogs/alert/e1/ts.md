@@ -1,4 +1,4 @@
-```js
+```typescript
 
 import {MatDialog} from '@angular/material';
 import {MatAlertDialog, MatAlertDialogData} from '@angular-material-extensions/dialogs';
