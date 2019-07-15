@@ -1,6 +1,7 @@
 {
   "name": "@angular-material-extensions/dialogs",
-  "description": "Material password strength meter to indicate how secure is the provided password",
+  "description": "Set of prebuilt extended angular material dialogs as components | simple API and easy to use",
+  "version": "0.0.1",
   "homepage": "https://github.com/angular-material-extensions/components/tree/master/projects/angular-material-extensions/dialogs",
   "author": {
     "name": "anthonynahas",
@@ -10,12 +11,31 @@
     "type": "git",
     "url": "git://github.com/angular-material-extensions/components.git"
   },
-  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "library",
+    "material",
+    "material design",
+    "angular components",
+    "angular material dialogs",
+    "prebuilt dialog",
+    "confirm dialog",
+    "alert dialog",
+    "edit dialog",
+    "timer dialog"
+  ],
+  "bugs": {
+    "url": "https://github.com/angular-material-extensions/components/issues"
+  },
   "peerDependencies": {
     "@angular/common": "^8.1.0",
     "@angular/core": "^8.1.0",
     "@angular/cdk": "^8.0.2",
     "@angular/material": "^8.0.2",
     "@angular/flex-layout": "^8.0.0-beta.26"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
