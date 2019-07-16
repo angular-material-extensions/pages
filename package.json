@@ -1,6 +1,17 @@
 {
-  "name": "components",
+  "name": "@angular-material-extensions/components",
+  "description": "Set of components, directives, services and modules to boost the app development with angular material ",
   "version": "0.0.0",
+  "homepage": "https://github.com/angular-material-extensions/components/tree/master/projects/angular-material-extensions/dialogs",
+  "author": {
+    "name": "anthonynahas",
+    "url": "https://github.com/anthonynahas"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular-material-extensions/components.git"
+  },
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,6 +31,8 @@
     "link:libraries": "npm link @angular-material-extensions/dialogs",
     "link:all": "npm run link:dialogs && npm run link:libraries",
     "test": "ng test",
+    "semantic-release": "semantic-release",
+    "semantic-release-no-ci": "semantic-release --no-ci",
     "serve:prerender": "cd dist/browser && http-server",
     "serve:ssr": "node dist/server"
   },
@@ -54,6 +67,8 @@
     "@angular/cli": "^8.1.1",
     "@angular/compiler-cli": "^8.1.1",
     "@angular/language-service": "^8.1.1",
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/git": "^7.0.16",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.6.2",
@@ -70,11 +85,40 @@
     "ng-packagr": "^5.1.0",
     "protractor": "~5.4.0",
     "schematics-utilities": "latest",
+    "semantic-release": "^15.13.18",
     "ts-loader": "^6.0.4",
     "ts-node": "~8.3.0",
     "tsickle": "^0.35.0",
     "tslint": "~5.18.0",
     "typescript": "~3.4.5",
     "webpack-cli": "^3.3.6"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "release": {
+    "branch": "master",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "dist/**/*.{js,css}",
+            "docs",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ],
+    "preset": "angular"
   }
 }

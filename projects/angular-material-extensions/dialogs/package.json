@@ -29,7 +29,8 @@
     "url": "https://github.com/angular-material-extensions/components/issues"
   },
   "scripts": {
-    "semantic-release": "semantic-release --no-ci"
+    "semantic-release": "semantic-release",
+    "semantic-release-no-ci": "semantic-release --no-ci"
   },
   "peerDependencies": {
     "@angular/common": "^8.1.0",
@@ -43,9 +44,11 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/git": "^7.0.16",
     "semantic-release": "^15.13.18"
   },
   "release": {
+    "branch": "dialogs",
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
@@ -53,6 +56,12 @@
         "@semantic-release/changelog",
         {
           "changelogFile": "docs/CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "../../../dist/angular-material-extensions/dialogs"
         }
       ],
       [
