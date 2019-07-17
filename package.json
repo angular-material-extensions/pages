@@ -1,7 +1,7 @@
 {
   "name": "@angular-material-extensions/components",
   "description": "Set of components, directives, services and modules to boost the app development with angular material ",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/angular-material-extensions/components/tree/master/projects/angular-material-extensions/dialogs",
   "author": {
     "name": "anthonynahas",
