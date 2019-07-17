@@ -17,7 +17,7 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/gdi2290/awesome-angular)
 
 
-> This project has been transferred from [ngx-material-pages](https://www.npmjs.com/package/ngx-material-pages)  to [@angular-material-extensions/pages](https://github.com/angular-material-extensions/pages)
+> This Github project has been transferred to the angular material extensions monorepo [angular-material-extensions/components](https://github.com/angular-material-extensions/components)
 
 <p align="center">
   <img alt="@angular-material-extensions/pages" style="text-align: center;"

@@ -1,11 +1,11 @@
 {
-  "name": "@angular-material-extensions/pages-demo",
+  "name": "demo",
   "version": "0.0.0",
   "license": "MIT",
   "description": "Demo app for @angular-material-extensions/pages",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4009",
     "serve:prod": "ng serve --prod",
     "build": "ng build",
     "build:doc": "cd ../ && gulp build:doc",
