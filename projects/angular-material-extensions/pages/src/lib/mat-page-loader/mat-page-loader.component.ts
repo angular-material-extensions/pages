@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, ContentChild, OnInit} from '@angular/core';
+import {Component, ContentChild} from '@angular/core';
 import {MatPageOutlookComponent} from '../mat-page-outlook/mat-page-outlook.component';
 import {MatPageContentComponent} from '../mat-page-content/mat-page-content.component';
 
@@ -9,7 +9,7 @@ import {MatPageContentComponent} from '../mat-page-content/mat-page-content.comp
 })
 export class MatPageLoaderComponent {
 
-  @ContentChild(MatPageOutlookComponent) pageOutlook: MatPageOutlookComponent;
-  @ContentChild(MatPageContentComponent) pageContent: MatPageContentComponent;
+  @ContentChild(MatPageOutlookComponent, {static: false}) pageOutlook: MatPageOutlookComponent;
+  @ContentChild(MatPageContentComponent, {static: false}) pageContent: MatPageContentComponent;
 
 }

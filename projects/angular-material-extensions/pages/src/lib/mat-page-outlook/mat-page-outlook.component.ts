@@ -1,14 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  Directive,
-  forwardRef,
-  Input,
-  OnInit,
-  TemplateRef,
-  ViewChild,
-  ViewEncapsulation
-} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit, TemplateRef, ViewChild, ViewEncapsulation} from '@angular/core';
 
 
 @Component({
@@ -22,7 +12,7 @@ import {
 export class MatPageOutlookComponent implements OnInit {
 
   /** Template for page outlook content. */
-  @ViewChild(TemplateRef) content: TemplateRef<any>;
+  @ViewChild(TemplateRef, {static: false}) content: TemplateRef<any>;
 
   @Input()
   title: string;
