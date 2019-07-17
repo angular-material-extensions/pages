@@ -104,6 +104,9 @@ jobs:
       - restore_cache:
           key: *dist_key
       - run:
+          name: go to the target directory
+          command: cd projects/angular-material-extensions/dialogs
+      - run:
           name: release-app
           command: npm run semantic-release || true
 
@@ -149,6 +152,12 @@ workflows:
           requires:
             - build-libraries
       #            - test-app
+      - release-dialogs-lib:
+          requires:
+            - build-libraries
+          filters:
+            branches:
+              only: dialogs
       - release-app:
           requires:
             - build-prerender-app
