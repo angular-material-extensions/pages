@@ -217,6 +217,41 @@
           }
         }
       }
+    },
+    "@angular-material-extensions/pages": {
+      "projectType": "library",
+      "root": "projects/angular-material-extensions/pages",
+      "sourceRoot": "projects/angular-material-extensions/pages/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-material-extensions/pages/tsconfig.lib.json",
+            "project": "projects/angular-material-extensions/pages/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-material-extensions/pages/src/test.ts",
+            "tsConfig": "projects/angular-material-extensions/pages/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-material-extensions/pages/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-material-extensions/pages/tsconfig.lib.json",
+              "projects/angular-material-extensions/pages/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "components"

@@ -33,6 +33,12 @@
       ],
       "@angular-material-extensions/core/*": [
         "dist/angular-material-extensions/core/*"
+      ],
+      "@angular-material-extensions/pages": [
+        "dist/angular-material-extensions/pages"
+      ],
+      "@angular-material-extensions/pages/*": [
+        "dist/angular-material-extensions/pages/*"
       ]
     }
   }
