@@ -1,0 +1,17 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/*
+ * Public API Surface of dialogs
+ */
+export { MatAlertDialog } from './lib/mat-alert-dialog/mat-alert-dialog.component';
+export { MatAsyncDialog } from './lib/mat-async-dialog/mat-async-dialog.component';
+export { MatConfirmDialog } from './lib/mat-confirm-dialog/mat-confirm-dialog.component';
+export { MatInputDialog } from './lib/mat-input-dialog/mat-input-dialog.component';
+export { MatLoadingDialog } from './lib/mat-loading-dialog/mat-loading-dialog.component';
+export { MatRadioDialog } from './lib/mat-radio-dialog/mat-radio-dialog.component';
+export { MatSelectDialog } from './lib/mat-select-dialog/mat-select-dialog.component';
+export { MatTimerDialog } from './lib/mat-timer-dialog/mat-timer-dialog.component';
+export { dialogs, MatDialogsModule } from './lib/mat-dialogs.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0Bhbmd1bGFyLW1hdGVyaWFsLWV4dGVuc2lvbnMvZGlhbG9ncy8iLCJzb3VyY2VzIjpbInB1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUlBLCtCQUFjLG1EQUFtRCxDQUFDO0FBQ2xFLCtCQUFjLG1EQUFtRCxDQUFDO0FBQ2xFLGlDQUFjLHVEQUF1RCxDQUFDO0FBQ3RFLCtCQUFjLG1EQUFtRCxDQUFDO0FBQ2xFLGlDQUFjLHVEQUF1RCxDQUFDO0FBQ3RFLCtCQUFjLG1EQUFtRCxDQUFDO0FBQ2xFLGdDQUFjLHFEQUFxRCxDQUFDO0FBQ3BFLCtCQUFjLG1EQUFtRCxDQUFDO0FBQ2xFLDBDQUFjLDBCQUEwQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBkaWFsb2dzXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvbWF0LWFsZXJ0LWRpYWxvZy9tYXQtYWxlcnQtZGlhbG9nLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9tYXQtYXN5bmMtZGlhbG9nL21hdC1hc3luYy1kaWFsb2cuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbGliL21hdC1jb25maXJtLWRpYWxvZy9tYXQtY29uZmlybS1kaWFsb2cuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbGliL21hdC1pbnB1dC1kaWFsb2cvbWF0LWlucHV0LWRpYWxvZy5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbWF0LWxvYWRpbmctZGlhbG9nL21hdC1sb2FkaW5nLWRpYWxvZy5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbWF0LXJhZGlvLWRpYWxvZy9tYXQtcmFkaW8tZGlhbG9nLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9tYXQtc2VsZWN0LWRpYWxvZy9tYXQtc2VsZWN0LWRpYWxvZy5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbWF0LXRpbWVyLWRpYWxvZy9tYXQtdGltZXItZGlhbG9nLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9tYXQtZGlhbG9ncy5tb2R1bGUnO1xuIl19
