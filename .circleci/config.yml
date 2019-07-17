@@ -15,6 +15,10 @@ dist_key: &dist_key components-dist-{{ .Revision }}
 cache_dialogs_key: &cache_dialogs_key dialogs-deps-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
 dist_dialogs_key: &dist_dialogs_key dialogss-dist-{{ .Revision }}
 
+#pages dist package
+cache_pages_key: &cache_pages_key pages-deps-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+dist_pages_key: &dist_pages_key pagess-dist-{{ .Revision }}
+
 jobs:
   install:
     <<: *job_defaults
@@ -52,7 +56,6 @@ jobs:
           name: test
           command: npm run test
 
-
   build-libraries:
     <<: *job_defaults
     steps:
@@ -62,10 +65,17 @@ jobs:
       - run:
           name: build @angular-material-extensions/dialogs library
           command: npm run build:dialogs
+      - run:
+          name: build @angular-material-extensions/pages library
+          command: cd projects/angular-material-extensions/pages && npm run build
       - save_cache:
           key: *cache_dialogs_key
           paths:
             - dist/angular-material-extensions/dialogs
+      - save_cache:
+          key: *cache_pages_key
+          paths:
+            - dist/angular-material-extensions/pages
 
   build-prerender-app:
     <<: *job_defaults
@@ -75,6 +85,8 @@ jobs:
           key: *cache_key
       - restore_cache:
           key: *cache_dialogs_key
+      - restore_cache:
+          key: *cache_pages_key
       - run:
           name: build-prerender
           command: sudo npm run build:prerender
