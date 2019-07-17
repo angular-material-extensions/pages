@@ -26,7 +26,7 @@ export class MatPagesComponent implements OnInit, AfterContentInit {
   @ViewChild('sidenav', {static: false})
   sidenav: MatSidenav;
 
-  @ViewChild(MatTabGroup, {read: ElementRef, static: false})
+  @ViewChild(MatTabGroup, {read: ElementRef, static: true})
   tabHeader: ElementRef;
 
   @ContentChildren(MatPageLoaderComponent)

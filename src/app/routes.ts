@@ -8,5 +8,9 @@ export const ANGULAR_MATERIAL_EXTENSIONS_ROUTES: Routes =
       path: 'dialogs',
       loadChildren: () => import('src/app/pages/dialogs-page/dialogs-page.module').then(m => m.DialogsPageModule),
     },
+    {
+      path: 'pages',
+      loadChildren: () => import('src/app/pages/pages-page/pages-page.module').then(m => m.PagesPageModule),
+    },
     {path: '**', redirectTo: ''},
   ];
