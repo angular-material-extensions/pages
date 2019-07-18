@@ -30,7 +30,8 @@
   },
   "scripts": {
     "semantic-release": "semantic-release",
-    "semantic-release-no-ci": "semantic-release --no-ci"
+    "semantic-release-no-ci": "semantic-release --no-ci",
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag dialogs_v$PACKAGE_VERSION && git push --tags"
   },
   "peerDependencies": {
     "@angular/common": "^8.1.0",

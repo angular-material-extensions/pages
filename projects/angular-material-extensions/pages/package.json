@@ -33,12 +33,42 @@
     "build:schematics": "../../../node_modules/.bin/tsc -p tsconfig.schematics.json",
     "resync:schematics": "rsync -a schematics/collection.json ../../../dist/angular-material-extensions/pages/schematics/",
     "postbuild": "npm run build:schematics && npm run resync:schematics",
-    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag dialogs_v$PACKAGE_VERSION && git push --tags"
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag pages_v$PACKAGE_VERSION && git push --tags"
   },
   "peerDependencies": {
     "@angular/common": "^8.1.1",
     "@angular/core": "^8.1.1",
     "@angular/cdk": "^8.1.1",
     "@angular/material": "^8.1.1"
+  },
+  "release": {
+    "branch": "pages",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "../../../dist/angular-material-extensions/pages"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "docs",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ],
+    "preset": "angular"
   }
 }
