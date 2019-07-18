@@ -31,10 +31,10 @@ jobs:
           command: npm ci
       - run:
           name: Install Angular CLI globally
-          command: npm i -g @angular/cli
+          command: sudo npm i -g @angular/cli
       - run:
           name: Install Semantic Release globally
-          command: npm i -g semantic-release@15
+          command: sudo npm i -g semantic-release@15
       - save_cache:
           key: *cache_key
           paths:
