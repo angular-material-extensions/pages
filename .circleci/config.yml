@@ -32,6 +32,9 @@ jobs:
       - run:
           name: Install Semantic Release globally
           command: sudo npm i -g semantic-release@15
+      - run:
+          name: Install resync command
+          command: sudo apt install rsync
       - save_cache:
           key: *cache_key
           paths:
