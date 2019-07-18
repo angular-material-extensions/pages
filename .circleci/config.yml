@@ -129,7 +129,7 @@ jobs:
           key: *dist_key
       - run:
           name: release-pages-lib
-          command: cd projects/angular-material-extensions/pages && npm run semantic-release || true
+          command: cd projects/angular-material-extensions/pages && npx semantic-release || true
 
   deploy-app-dev:
     <<: *job_defaults
