@@ -119,6 +119,18 @@ jobs:
           name: release-dialogs-lib
           command: cd projects/angular-material-extensions/dialogs && npm run semantic-release || true
 
+  release-pages-lib:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: release-pages-lib
+          command: cd projects/angular-material-extensions/pages && npm run semantic-release || true
+
   deploy-app-dev:
     <<: *job_defaults
     steps:
@@ -167,6 +179,12 @@ workflows:
           filters:
             branches:
               only: dialogs
+      - release-pages-lib:
+          requires:
+            - build-libraries
+          filters:
+            branches:
+              only: pages
       - release-app:
           requires:
             - build-prerender-app
