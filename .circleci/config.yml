@@ -69,6 +69,9 @@ jobs:
       - restore_cache:
           key: *cache_key
       - run:
+          name: Install resync command
+          command: sudo apt install rsync
+      - run:
           name: build @angular-material-extensions/dialogs library
           command: npm run build:dialogs
       - run:
