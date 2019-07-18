@@ -78,11 +78,11 @@ jobs:
           name: build @angular-material-extensions/pages library
           command: cd projects/angular-material-extensions/pages && npm run build
       - save_cache:
-          key: *cache_dialogs_key
+          key: *dist_dialogs_key
           paths:
             - dist/angular-material-extensions/dialogs
       - save_cache:
-          key: *cache_pages_key
+          key: *dist_pages_key
           paths:
             - dist/angular-material-extensions/pages
 
@@ -93,9 +93,9 @@ jobs:
       - restore_cache:
           key: *cache_key
       - restore_cache:
-          key: *cache_dialogs_key
+          key: *dist_dialogs_key
       - restore_cache:
-          key: *cache_pages_key
+          key: *dist_pages_key
       - run:
           name: build-prerender
           command: sudo npm run build:prerender
@@ -123,7 +123,7 @@ jobs:
       - restore_cache:
           key: *cache_key
       - restore_cache:
-          key: *dist_key
+          key: *dist_dialogs_key
       - run:
           name: release-dialogs-lib
           command: cd projects/angular-material-extensions/dialogs && npm run semantic-release || true
@@ -135,7 +135,7 @@ jobs:
       - restore_cache:
           key: *cache_key
       - restore_cache:
-          key: *dist_key
+          key: *dist_pages_key
       - run:
           name: release-pages-lib
           command: cd projects/angular-material-extensions/pages && npx semantic-release || true
