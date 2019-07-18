@@ -30,9 +30,6 @@ jobs:
           name: install-dependencies
           command: npm ci
       - run:
-          name: Install Angular CLI globally
-          command: sudo npm i -g @angular/cli
-      - run:
           name: Install Semantic Release globally
           command: sudo npm i -g semantic-release@15
       - save_cache:

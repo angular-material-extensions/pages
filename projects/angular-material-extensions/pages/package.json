@@ -29,7 +29,7 @@
     "url": "https://github.com/angular-material-extensions/pages/issues"
   },
   "scripts": {
-    "build": "ng build @angular-material-extensions/pages",
+    "build": "../../../node_modules/.bin/ng build @angular-material-extensions/pages",
     "build:schematics": "../../../node_modules/.bin/tsc -p tsconfig.schematics.json",
     "resync:schematics": "rsync -a schematics/collection.json ../../../dist/angular-material-extensions/pages/schematics/",
     "postbuild": "npm run build:schematics && npm run resync:schematics",
