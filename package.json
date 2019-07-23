@@ -87,5 +87,49 @@
     "tslint": "~5.14.0",
     "typescript": "~3.4.5",
     "webpack-node-externals": "~1.7.2"
+  },
+  "engines": {
+    "node": ">=10.x"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "@angular/core",
+      "@angular/common",
+      "@angular/compiler",
+      "@angular/platform-server",
+      "@angular/platform-browser",
+      "@angular/platform-browser-dynamic",
+      "@angular/compiler-cli",
+      "zone.js",
+      "rxjs",
+      "tslint",
+      "gulp-tslint",
+      "typescript",
+      "awesome-typescript-loader",
+      "codelyzer",
+      "@angular/animations",
+      "@types/jasmine",
+      "@types/jest",
+      "@types/node",
+      "conventional-github-releaser",
+      "rollup-plugin-uglify",
+      "gulp-inline-ng2-template"
+    ]
+  },
+  "commitplease": {
+    "style": "angular",
+    "types": [
+      "feat",
+      "fix",
+      "docs",
+      "style",
+      "refactor",
+      "perf",
+      "test",
+      "chore",
+      "revert",
+      "demo"
+    ],
+    "scope": "\\S+.*"
   }
 }
