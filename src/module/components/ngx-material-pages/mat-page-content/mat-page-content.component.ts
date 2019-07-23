@@ -9,7 +9,7 @@ import {ChangeDetectionStrategy, Component, Input, OnInit, TemplateRef, ViewChil
 export class MatPageContentComponent implements OnInit {
 
   /** Template for page content. */
-  @ViewChild(TemplateRef) content: TemplateRef<any>;
+  @ViewChild(TemplateRef, {static: false}) content: TemplateRef<any>;
 
   @Input()
   title: string;

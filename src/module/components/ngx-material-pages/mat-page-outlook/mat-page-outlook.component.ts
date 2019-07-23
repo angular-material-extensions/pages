@@ -22,7 +22,7 @@ import {
 export class MatPageOutlookComponent implements OnInit {
 
   /** Template for page outlook content. */
-  @ViewChild(TemplateRef) content: TemplateRef<any>;
+  @ViewChild(TemplateRef, {static: false}) content: TemplateRef<any>;
 
   @Input()
   title: string;

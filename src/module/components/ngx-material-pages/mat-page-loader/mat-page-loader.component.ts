@@ -9,7 +9,7 @@ import {MatPageContentComponent} from '../mat-page-content/mat-page-content.comp
 })
 export class MatPageLoaderComponent {
 
-  @ContentChild(MatPageOutlookComponent) pageOutlook: MatPageOutlookComponent;
-  @ContentChild(MatPageContentComponent) pageContent: MatPageContentComponent;
+  @ContentChild(MatPageOutlookComponent, {static: false}) pageOutlook: MatPageOutlookComponent;
+  @ContentChild(MatPageContentComponent, {static: false}) pageContent: MatPageContentComponent;
 
 }
