@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "downlevelIteration": true,
     "module": "esnext",
     "outDir": "./dist/out-tsc",
@@ -16,6 +17,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@angular-material-extensions/pages": [
+        "dist/angular-material-extensions/pages"
+      ],
+      "@angular-material-extensions/pages/*": [
+        "dist/angular-material-extensions/pages/*"
+      ]
+    }
   }
 }
