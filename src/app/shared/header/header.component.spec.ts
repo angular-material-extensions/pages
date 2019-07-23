@@ -17,7 +17,7 @@ describe('HeaderComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        NgbCollapseModule.forRoot()
+        NgbCollapseModule
       ],
       declarations: [
         HeaderComponent,
