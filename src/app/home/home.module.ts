@@ -5,7 +5,9 @@ import {CommonModule} from '@angular/common';
 import {HomeRoutingModule} from './home-routing.module';
 import {HomeComponent} from './home.component';
 import {DisqusModule} from 'ngx-disqus';
-import {MatCardModule, MatSnackBarModule, MatTabsModule} from '@angular/material';
+import { MatCardModule } from '@angular/material/card';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   imports: [
