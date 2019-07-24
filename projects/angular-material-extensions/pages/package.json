@@ -29,14 +29,6 @@
     "url": "https://github.com/angular-material-extensions/pages/issues"
   },
   "scripts": {
-    "build": "gulp build",
-    "build:watch": "gulp build:watch",
-    "build:schematics": "gulp build:schematics",
-    "build:watch:fast": "gulp build:watch-fast",
-    "test": " gulp test",
-    "test:watch": " gulp test:watch",
-    "demo": " gulp build:demo",
-    "check-travis": " travis-status --repo=angular-material-extensions/pages --branch=master --fail-pending || echo 'Not yet passing'"
   },
   "peerDependencies": {
     "@angular/common": "^8.1.2",
