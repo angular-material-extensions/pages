@@ -1,0 +1,56 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav [mode]="navMode" opened="true"
+               [fixedInViewport]="'false'" [fixedTopGap]="'false'" [fixedBottomGap]="'false'">
+
+    <mat-toolbar color="primary">
+    </mat-toolbar>
+
+    <mat-vertical-stepper [selectedIndex]="index" (selectionChange)="onStepSelectionChange($event)">
+      <mat-step *ngFor="let page of pages;let i = index;" [label]="page.pageOutlook.title">
+        <ng-container [ngTemplateOutlet]="page.pageOutlook.content"></ng-container>
+      </mat-step>
+    </mat-vertical-stepper>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      {{title}}
+    </mat-toolbar>
+    <div class="demo-sidenav-content main-container">
+
+      <mat-tab-group [selectedIndex]="index" style="min-height: 15vh;" >
+        <button mat-fab color="warn" (click)="previous()">
+          <mat-icon>location</mat-icon>
+        </button>
+        <mat-tab *ngFor="let page of pages;let i = index;">
+          <ng-template matTabContent>
+            <ng-container [ngTemplateOutlet]="page.pageContent.content"></ng-container>
+          </ng-template>
+        </mat-tab>
+      </mat-tab-group>
+
+
+      <div class="navigation-buttons">
+        <button mat-fab color="primary" (click)="previous()" [disabled]="index == 0">
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+        <div *ngIf="index == totalPages - 1;then finished else nextAvailable">
+        </div>
+        <ng-template #nextAvailable>
+          <button mat-fab color="primary" (click)="next()">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+        </ng-template>
+        <ng-template #finished>
+          <button mat-fab color="accent" (click)="done.next()">
+            <mat-icon>done</mat-icon>
+          </button>
+        </ng-template>
+      </div>
+
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

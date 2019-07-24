@@ -1,12 +1,10 @@
-import { NgModule } from '@angular/core';
-import { PagesComponent } from './pages.component';
-
+import {NgModule} from '@angular/core';
 
 
 @NgModule({
-  declarations: [PagesComponent],
-  imports: [
-  ],
-  exports: [PagesComponent]
+  declarations: [],
+  imports: [],
+  exports: []
 })
-export class PagesModule { }
+export class PagesModule {
+}
