@@ -96,7 +96,7 @@
     "node": ">=10.x"
   },
   "release": {
-    "branch": "pages",
+    "branch": "master",
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
@@ -112,10 +112,6 @@
           "pkgRoot": "dist/angular-material-extensions/pages"
         }
       ],
-      {
-        "path": "@semantic-release/exec",
-        "cmd": "node bump.js"
-      },
       [
         "@semantic-release/git",
         {
