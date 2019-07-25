@@ -137,7 +137,7 @@ jobs:
           key: *dist_key
       - run:
           name: deploy-app-dev
-          command: npx firebase deploy --token=$FIREBASE_TOKEN
+          command: npm run deploy:gh
 
   deploy-app-prod:
     <<: *job_defaults
