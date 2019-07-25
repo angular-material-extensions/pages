@@ -1,49 +1,201 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
 version: 2
+
+job_defaults: &job_defaults
+  docker:
+    - image: circleci/node:10-browsers
+      environment:
+        CHROME_BIN: '/usr/bin/google-chrome'
+  working_directory: ~/project/repo
+
+#app
+cache_key: &cache_key pages-app-deps-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+dist_key: &dist_key pages-app-dist-{{ .Revision }}
+
+#pages dist package
+cache_pages_key: &cache_pages_key pages-deps-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+dist_pages_key: &dist_pages_key pagess-dist-{{ .Revision }}
+
 jobs:
-  build:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:8.9.4
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
-    working_directory: ~/repo
-
+  install:
+    <<: *job_defaults
     steps:
       - checkout
-
-      # Download and cache dependencies
       - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-      - run: ls -la && pwd
-      - run: git --version
-      - run: npm install
-      - run: npm install --only=dev
-      - run: npm run build
-      - run: ls -la && pwd
-
+          key: *cache_key
+      - run:
+          name: install-dependencies
+          command: npm ci
+      - run:
+          name: Install Semantic Release globally
+          command: sudo npm i -g semantic-release@15
+      - run:
+          name: Install resync command
+          command: sudo apt install rsync
       - save_cache:
+          key: *cache_key
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
 
-      - persist_to_workspace:
-                root: .
-                paths:
-                  - dist
-      # run tests!
-      #- run: npm test
+  lint:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - run:
+          name: lint
+          command: npm run lint
 
+  test-app:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: test
+          command: npm run test
 
+  build-library:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - run:
+          name: Install resync command
+          command: sudo apt install rsync
+      - run:
+          name: build @angular-material-extensions/pages library
+          command: cd projects/angular-material-extensions/pages && npm run build
+      - save_cache:
+          key: *dist_pages_key
+          paths:
+            - dist/angular-material-extensions/pages
 
+  build-prerender-app:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_pages_key
+      - run:
+          name: build-prerender
+          command: sudo npm run build:prerender
+      - save_cache:
+          key: *dist_key
+          paths:
+            - dist
 
+  release-app:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: release-app
+          command: npm run semantic-release || true
+
+  release-dialogs-lib:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_pages_key
+      - run:
+          name: release-dialogs-lib
+          command: cd projects/angular-material-extensions/dialogs && npm run semantic-release || true
+
+  release-pages-lib:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_pages_key
+      - run:
+          name: release-pages-lib
+          command: cd projects/angular-material-extensions/pages && npx semantic-release || true
+
+  deploy-app-dev:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: deploy-app-dev
+          command: npx firebase deploy --token=$FIREBASE_TOKEN
+
+  deploy-app-prod:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: deploy-app-prod
+          command: npx firebase deploy --token=$FIREBASE_TOKEN
+
+workflows:
+  version: 2
+  build-test-release:
+    jobs:
+      - install
+      #      - lint:
+      #          requires:
+      #            - install
+      #      - test-app:
+      #          requires:
+      #            - install
+      - build-library:
+          requires:
+            - install
+      - build-prerender-app:
+          requires:
+            - build-library
+      #            - test-app
+      - release-dialogs-lib:
+          requires:
+            - build-library
+          filters:
+            branches:
+              only: dialogs
+      - release-pages-lib:
+          requires:
+            - build-library
+          filters:
+            branches:
+              only: pages
+      - release-app:
+          requires:
+            - build-prerender-app
+          filters:
+            branches:
+              only: master
+      - deploy-app-prod:
+          requires:
+            - release-app
+          filters:
+            branches:
+              only: master
+#      - deploy-app-dev:
+#          requires:
+#            - build-prerender-app
+#          filters:
+#            branches:
+#              only: dev
