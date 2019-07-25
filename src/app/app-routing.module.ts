@@ -7,11 +7,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  // {
-  //   path: 'getting-started',
-  //   loadChildren: () => import('app/getting-started/getting-started.module').then(m => m.GettingStartedModule)
-  // },
-  {path: '**', redirectTo: ''},
+  {
+    path: 'home',
+    loadChildren: () => import('app/home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'getting-started',
+    loadChildren: () => import('app/getting-started/getting-started.module').then(m => m.GettingStartedModule)
+  },
 ];
 
 @NgModule({
