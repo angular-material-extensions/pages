@@ -163,7 +163,7 @@ workflows:
           filters:
             branches:
               only: master
-      - deploy-app-prod:
+      - deploy-app-dev:
           requires:
             - release-app
           filters:
