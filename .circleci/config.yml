@@ -84,6 +84,12 @@ jobs:
       - restore_cache:
           key: *dist_pages_key
       - run:
+          name: check dist files
+          command: ls projects/angular-material-extensions/pages/
+      run:
+          name: link library
+          command: npm run link
+      - run:
           name: build-prerender
           command: sudo npm run build:prerender
       - save_cache:
