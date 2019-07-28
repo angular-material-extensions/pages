@@ -86,7 +86,7 @@ jobs:
       - run:
           name: check dist files
           command: ls projects/angular-material-extensions/pages/
-      run:
+      - run:
           name: link library
           command: npm run link
       - run:
