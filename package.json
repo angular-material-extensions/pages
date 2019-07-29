@@ -17,7 +17,7 @@
     "build:prerender:local": "npm run build:client-and-server-bundles:local && npm run webpack:server && npm run generate:prerender",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "compile:server": "tsc -p server.tsconfig.json",
-    "deploy:gh": "ngh --dir=dist/browser",
+    "deploy:gh": "ngh --no-silent --dir=dist/browser",
     "deploy:firebase": "npm run build:prod && npm run build:doc && firebase deploy",
     "e2e": "ng e2e",
     "generate:prerender": "cd dist && node prerender",

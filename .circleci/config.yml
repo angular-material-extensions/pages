@@ -135,6 +135,12 @@ jobs:
           name: dist outlook
           command: ls dist
       - run:
+          name: Set git email config
+          command: git config --global user.email "anthony.na@hotmail.de"
+      - run:
+          name: Set git name config
+          command: git config --global user.name "Anthony Nahas"
+      - run:
           name: deploy-app-dev
           command: npm run deploy:gh
 
