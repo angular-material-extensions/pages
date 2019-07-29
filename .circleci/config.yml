@@ -129,6 +129,11 @@ jobs:
           key: *cache_key
       - restore_cache:
           key: *dist_key
+      - restore_cache:
+          key: *dist_pages_key
+      - run:
+          name: dist outlook
+          command: ls dist
       - run:
           name: deploy-app-dev
           command: npm run deploy:gh
