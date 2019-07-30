@@ -1,5 +1,6 @@
 <p align="center">
-  <img height="256px" width="256px" style="text-align: center;" src="https://cdn.rawgit.com/angular-material-extensions/pages/master/demo/src/assets/logo.svg">
+  <img height="256px" width="256px" style="text-align: center;" 
+  src="https://cdn.jsdelivr.net/gh/angular-material-extensions/pages@master/assets/angular-material-extensions-logo.png">
 </p>
 
 
