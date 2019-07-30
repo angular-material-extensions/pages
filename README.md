@@ -4,7 +4,7 @@
 </p>
 
 
-# @angular-material-extensions/pages - Open source library for Angular Apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes) - Angular V7 supported
+# @angular-material-extensions/pages - Open source library for Angular Apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes) - Angular V8 supported
 
 [![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fpages.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fpages)
 [![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/pages)
