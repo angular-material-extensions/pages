@@ -99,7 +99,7 @@
     "tsickle": "^0.35.0",
     "tslint": "~5.18.0",
     "typescript": "~3.4.5",
-    "webpack-cli": "^3.3.6",
+    "webpack-cli": "^3.3.7",
     "webpack-node-externals": "~1.7.2",
     "xmlhttprequest": "^1.8.0"
   },
