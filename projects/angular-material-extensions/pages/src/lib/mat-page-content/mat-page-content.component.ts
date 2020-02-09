@@ -9,7 +9,7 @@ import {Component, Input, OnInit, TemplateRef, ViewChild} from '@angular/core';
 export class MatPageContentComponent implements OnInit {
 
   /** Template for page content. */
-  @ViewChild(TemplateRef, {static: false}) content: TemplateRef<any>;
+  @ViewChild(TemplateRef) content: TemplateRef<any>;
 
   @Input()
   title: string;

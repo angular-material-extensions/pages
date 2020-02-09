@@ -14,7 +14,8 @@ import {
 } from '@angular/core';
 import {MatPageLoaderComponent} from './mat-page-loader/mat-page-loader.component';
 import {StepperSelectionEvent} from '@angular/cdk/stepper';
-import {MatSidenav, MatTabGroup} from '@angular/material';
+import { MatSidenav } from '@angular/material/sidenav';
+import { MatTabGroup } from '@angular/material/tabs';
 
 @Component({
   selector: 'mat-pages',
@@ -23,7 +24,7 @@ import {MatSidenav, MatTabGroup} from '@angular/material';
 })
 export class MatPagesComponent implements OnInit, AfterContentInit {
 
-  @ViewChild('sidenav', {static: false})
+  @ViewChild('sidenav')
   sidenav: MatSidenav;
 
   @ViewChild(MatTabGroup, {read: ElementRef, static: true})

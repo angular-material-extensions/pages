@@ -12,7 +12,7 @@ import {ChangeDetectionStrategy, Component, Input, OnInit, TemplateRef, ViewChil
 export class MatPageOutlookComponent implements OnInit {
 
   /** Template for page outlook content. */
-  @ViewChild(TemplateRef, {static: false}) content: TemplateRef<any>;
+  @ViewChild(TemplateRef) content: TemplateRef<any>;
 
   @Input()
   title: string;

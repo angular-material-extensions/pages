@@ -11,6 +11,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -27,6 +28,12 @@
           },
           "configurations": {
             "hmr": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -35,6 +42,12 @@
               ]
             },
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -108,7 +121,7 @@
           "builder": "@angular-devkit/build-angular:server",
           "options": {
             "outputPath": "dist/server",
-            "main": "src/main.server.ts",
+            "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
           "configurations": {
@@ -118,8 +131,35 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
-              ]
+              ],
+              "optimization": true
             }
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "demoapp:build",
+            "serverTarget": "demoapp:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "demoapp:build:production",
+              "serverTarget": "demoapp:server:production"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "demoapp:build:production",
+            "serverTarget": "demoapp:server:production",
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {}
           }
         }
       }
@@ -160,6 +200,11 @@
           "options": {
             "tsConfig": "projects/angular-material-extensions/pages/tsconfig.lib.json",
             "project": "projects/angular-material-extensions/pages/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-material-extensions/pages/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -194,5 +239,8 @@
     "@schematics/angular:directive": {
       "prefix": "app"
     }
+  },
+  "cli": {
+    "analytics": "57a85e3d-c639-4361-a525-e907f763572e"
   }
 }

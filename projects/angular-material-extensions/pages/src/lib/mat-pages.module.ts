@@ -1,14 +1,12 @@
 import {CommonModule} from '@angular/common';
 import {ModuleWithProviders, NgModule} from '@angular/core';
-import {
-  MatButtonModule,
-  MatCardModule,
-  MatIconModule,
-  MatSidenavModule,
-  MatStepperModule,
-  MatTabsModule,
-  MatToolbarModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import {MatPagesComponent} from './mat-pages.component';
 import {MatPageLoaderComponent} from './mat-page-loader/mat-page-loader.component';
@@ -42,7 +40,7 @@ import {MatPageOutlookComponent} from './mat-page-outlook/mat-page-outlook.compo
   ]
 })
 export class MatPagesModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<MatPagesModule> {
     return {
       ngModule: MatPagesModule,
       providers: []
