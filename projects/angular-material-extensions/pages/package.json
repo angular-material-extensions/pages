@@ -1,7 +1,7 @@
 {
   "name": "@angular-material-extensions/pages",
   "description": "Open source library for angular apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes)",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "homepage": "https://github.com/angular-material-extensions/pages",
   "author": {
     "name": "anthonynahas",
@@ -41,7 +41,7 @@
     "release:patch": "../../../node_modules/.bin/release-it --patch --ci",
     "release:minor": "../../../node_modules/.bin/release-it --minor --ci",
     "release:major": "../../../node_modules/.bin/release-it --major --ci",
-    "release:version": "../../../node_modules/.bin/release-it 3.0.0 --ci",
+    "release:version": "../../../node_modules/.bin/release-it 4.0.0 --ci --no-git.requireCleanWorkingDir ",
     "ng:test": "../../../node_modules/.bin/ng test @angular-material-extensions/pages",
     "test": "../../../node_modules/.bin/jest --coverage",
     "test:watch": "../../../node_modules/.bin/jest --coverage --watch"
@@ -106,21 +106,5 @@
       "rollup-plugin-uglify",
       "gulp-inline-ng2-template"
     ]
-  },
-  "commitplease": {
-    "style": "angular",
-    "types": [
-      "feat",
-      "fix",
-      "docs",
-      "style",
-      "refactor",
-      "perf",
-      "test",
-      "chore",
-      "revert",
-      "demo"
-    ],
-    "scope": "\\S+.*"
   }
 }
