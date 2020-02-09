@@ -61,7 +61,7 @@
     },
     "npm": {
       "publish": true,
-      "publishPath": "../../../dist/angular-material-extensions/fab-menu"
+      "publishPath": "../../../dist/angular-material-extensions/pages"
     },
     "publishConfig": {
       "access": "public"
