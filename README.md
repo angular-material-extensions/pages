@@ -4,7 +4,7 @@
 </p>
 
 
-# @angular-material-extensions/pages - Open source library for Angular Apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes) - Angular V8 supported
+# @angular-material-extensions/pages - Open source library for Angular Apps to illustrate custom material pages content with steps (ideal for tutorials and explanation purposes) - Angular V9 supported
 
 [![npm version](https://badge.fury.io/js/%40angular-material-extensions%2Fpages.svg)](https://badge.fury.io/js/%40angular-material-extensions%2Fpages)
 [![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/pages)
@@ -64,7 +64,7 @@ by starring :star: and sharing it :loudspeaker:
 View all the directives and components in action at [https://angular-material-extensions.github.io/pages](https://angular-material-extensions.github.io/pages)
 
 ## Dependencies
-* [Angular](https://angular.io) (*requires*) tested with V7
+* [Angular](https://angular.io) (*requires*) tested with V9
 - if you are still using angular v5 or lower, please use the following version `1.2.1`
 
 
@@ -312,6 +312,8 @@ $ ng serve --open
 - [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
 - [@angular-material-extensions/jumbotron](https://github.com/angular-material-extensions/jumbotron)
 - [@angular-material-extensions/faq](https://github.com/angular-material-extensions/faq)
+- [@angular-material-extensions/fab-menu](https://github.com/angular-material-extensions/fab-menu)
+- [@angular-material-extensions/select-country](https://github.com/angular-material-extensions/select-country)
 - [@angular-material-extensions/combination-generator](https://github.com/angular-material-extensions/combination-generator)
 
 ---
