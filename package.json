@@ -73,16 +73,12 @@
     "@nguniversal/builders": "^9.0.0",
     "@nguniversal/express-engine": "^9.0.0",
     "@release-it/conventional-changelog": "^1.1.0",
-    "@semantic-release/changelog": "^5.0.0",
-    "@semantic-release/exec": "^5.0.0",
-    "@semantic-release/git": "^9.0.0",
     "@types/express": "^4.17.0",
     "@types/jasmine": "^3.5.3",
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^12.11.1",
     "angular-cli-ghpages": "^0.6.2",
     "codelyzer": "^5.1.2",
-    "commitplease": "^3.2.0",
     "express": "^4.16.4",
     "http-server": "^0.12.1",
     "jasmine-core": "~3.5.0",
@@ -110,36 +106,6 @@
   "engines": {
     "node": ">=10.x"
   },
-  "release": {
-    "branch": "master",
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "CHANGELOG.md"
-        }
-      ],
-      [
-        "@semantic-release/npm",
-        {
-          "pkgRoot": "dist/angular-material-extensions/pages"
-        }
-      ],
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "docs",
-            "package.json"
-          ],
-          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-        }
-      ]
-    ],
-    "preset": "angular"
-  },
   "greenkeeper": {
     "ignore": [
       "@angular/core",
@@ -164,21 +130,5 @@
       "rollup-plugin-uglify",
       "gulp-inline-ng2-template"
     ]
-  },
-  "commitplease": {
-    "style": "angular",
-    "types": [
-      "feat",
-      "fix",
-      "docs",
-      "style",
-      "refactor",
-      "perf",
-      "test",
-      "chore",
-      "revert",
-      "demo"
-    ],
-    "scope": "\\S+.*"
   }
 }
