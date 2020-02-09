@@ -5,6 +5,13 @@
 
 * **project:** upgraded the project to angular v9 ([1564896](https://github.com/angular-material-extensions/pages/commit/1564896dc90462684e708b4765e1f8a48ae3cb26))
 
+# [4.0.0](https://github.com/angular-material-extensions/pages/compare/3.0.0...4.0.0) (2020-02-09)
+
+
+### Bug Fixes
+
+* **project:** upgraded the project to angular v9 ([1564896](https://github.com/angular-material-extensions/pages/commit/1564896dc90462684e708b4765e1f8a48ae3cb26))
+
 
 
 
