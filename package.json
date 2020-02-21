@@ -46,7 +46,7 @@
     "@angular/platform-browser-dynamic": "^9.0.0",
     "@angular/platform-server": "^9.0.0",
     "@angular/router": "^9.0.0",
-    "@ng-bootstrap/ng-bootstrap": "^5.2.1",
+    "@ng-bootstrap/ng-bootstrap": "^6.0.0",
     "@nguniversal/express-engine": "^9.0.0",
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",
